@@ -1,0 +1,916 @@
+/* hero section css*/
+
+.hero-section{
+    width: 100%;
+    height: 748px;
+    margin: 120px auto 120px;
+    background: url(../element/image/hero-section.png) no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+@media(max-width:1366px){
+    .hero-section{
+        margin: 144px auto 48px;
+        height: 480px;
+    }
+}
+
+@media(max-width:1024px){
+    .hero-section{
+        margin: 96px auto 64px;
+        height: 480px;
+        background-size: cover;
+    }
+}
+
+@media(max-width:768px){
+    .hero-section{
+        margin: 120px auto 48px;
+        height: 360px;
+        background-size: cover;
+}
+}
+
+@media(max-width:414px){
+    .hero-section{
+        margin: 120px auto 24px;
+        height: 240px;
+        background-size: cover;
+}
+}
+
+/* Ministry-Section  css*/
+
+.ministry-section{
+    max-width: 1366px;
+    padding: 0px 80px;
+    margin: 0 auto 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.ministry-section .section-title{
+    align-self: stretch;
+    color: var(--Black, #1A1A1A);
+    text-align: center;
+    font-family: 'Noto Sans TC';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ministry-list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.ministry{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 24%;
+    overflow: hidden;
+}
+
+.ministry:hover{
+    cursor: pointer;
+}
+
+.ministry .cover-1, .ministry .cover-2, .ministry .cover-3, .ministry .cover-4{
+    display: flex;
+    align-self: stretch;
+    background-size: cover;
+    height: 200px;
+    padding: 8px 8px;
+    border-radius: 4px;
+}
+
+.ministry .cover-1{
+    background-image: url(../element/image/student-ministry-cover.png);
+}
+
+.ministry .cover-2{
+    background-image: url(../element/image/singles-ministry-cover.png);
+}
+
+.ministry .cover-3{
+    background-image: url(../element/image/married-ministry-cover.png);
+}
+
+.ministry .cover-4{
+    background-image: url(../element/image/elderly-ministry-cover.png);
+}
+
+.ministry .label{
+    display: flex;
+    padding: 10px 8px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 56px;
+    background: var(--main, #F2C700);
+
+    /* Text-5 */
+    font-family: Sans-Serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 120% */
+    color: var(--black, #000);
+}
+
+.ministry .name{
+    align-self: stretch;
+    color: var(--Black, #1A1A1A);
+    font-family: 'Noto Sans TC';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+}
+
+.ministry .description{
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-self: stretch;
+
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+}
+
+@media(max-width:1366px){
+    .ministry-section{
+        padding: 0 48px;
+    }
+    .ministry-section .section-title{
+        font-size: 36px;
+    }
+    .ministry{
+        width: 49%;
+    }
+    .ministry .cover-1, .ministry .cover-2, .ministry .cover-3, .ministry .cover-4{
+        height: 280px;
+        padding: 16px;
+    }
+}
+
+@media(max-width:1024px){
+    .ministry-section{
+        padding: 0 24px;
+        margin: 0 auto 64px;
+    }
+    .ministry-section .section-title{
+        font-size: 32px;
+    }
+    .ministry{
+        width: 48.5%;
+    }
+    .ministry .cover-1, .ministry .cover-2, .ministry .cover-3, .ministry .cover-4{
+        height: 240px;
+        padding: 12px;
+    }
+}
+
+@media(max-width:768px){
+    .ministry-section{
+        padding: 0 16px;
+        gap: 12px;
+        margin: 0 auto 48px;
+    }
+
+    .ministry{
+        width: 100%;
+        gap:4px;
+    }
+
+    .ministry-section .section-title{
+        font-size: 28px;
+    }
+
+    .ministry .cover-1, .ministry .cover-2, .ministry .cover-3, .ministry .cover-4{
+        height: 240px;
+    }
+
+    .ministry .name{
+        font-size: 18px;
+    }
+    
+    .ministry .description{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:414px){
+    .ministry-section{
+        padding: 0 16px;
+        gap: 12px;
+        margin: 0 auto 24px;
+    }
+
+    .ministry{
+        width: 100%;
+    }
+
+    .ministry-section .section-title{
+        font-size: 24px;
+    }
+
+    .ministry .cover-1, .ministry .cover-2, .ministry .cover-3, .ministry .cover-4{
+        height: 240px;
+        padding: 10px;
+    }
+
+    .ministry .name{
+        font-size: 16px;
+    }
+    
+    .ministry .description{
+        font-size: 12px;
+    }
+}
+
+/* Major Events Section */
+
+.major-activity{
+    display: flex;
+    max-width: 1366px;
+    padding: 0px 80px;
+    margin: 0 auto 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.major-activity .section-title{
+    color: var(--black, #000);
+    font-family: 'Noto Sans TC';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.major-activity .events{
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    gap:24px;
+}
+
+.major-activity .events .event-cover-1,
+.major-activity .events .event-cover-2,
+.major-activity .events .event-cover-3,
+.major-activity .events .event-cover-4{
+    display: flex;
+    padding: 24px;
+    align-items: flex-end;
+    border-radius: 8px;
+
+    color: var(--white, #FFF);
+    font-family: 'Noto Sans TC';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.major-activity .events .event-cover-1:hover,
+.major-activity .events .event-cover-2:hover,
+.major-activity .events .event-cover-3:hover,
+.major-activity .events .event-cover-4:hover{
+    cursor: pointer;
+}
+
+.major-activity .events .event-cover-1{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.84%, rgba(0, 0, 0, 0.50) 100%), 
+    url(../element/image/sunday-service.png);
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+}
+
+.major-activity .events .event-cover-2{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.84%, rgba(0, 0, 0, 0.50) 100%), 
+    url(../element/image/children-church.png);
+    background-size: cover;
+    width: 32%;
+    height: 268px;
+}
+
+.major-activity .events .event-cover-3{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.84%, rgba(0, 0, 0, 0.50) 100%), 
+    url(../element/image/bible-talks.png);
+    background-size: cover;
+    width: 32%;
+    height: 268px;
+}
+
+.major-activity .events .event-cover-4{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.84%, rgba(0, 0, 0, 0.50) 100%), 
+    url(../element/image/marriage-counselling.png);
+    background-size: cover;
+    width: 32%;
+    height: 268px;
+}
+
+@media(max-width:1366px){
+    .major-activity{
+        padding: 0px 48px;
+        margin: 0 auto 80px;
+        gap: 16px;
+    }
+
+    .major-activity .section-title{
+        font-size: 36px;
+    }
+    
+    .major-activity .events .event-cover-1,
+    .major-activity .events .event-cover-2,
+    .major-activity .events .event-cover-3,
+    .major-activity .events .event-cover-4{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 20px;
+    }
+
+    .major-activity .events .event-cover-1{
+        width: 100%;
+    }
+    .major-activity .events .event-cover-2,
+    .major-activity .events .event-cover-3,
+    .major-activity .events .event-cover-4{
+        width: 31.5%;
+    }
+}
+
+@media(max-width:1024px){
+    .major-activity{
+        padding: 0px 24px;
+        margin: 0 auto 64px;
+        gap: 16px;
+    }
+
+    .major-activity .events{
+        gap: 16px;
+    }
+
+    .major-activity .section-title{
+        font-size: 32px;
+    }
+    
+    .major-activity .events .event-cover-1,
+    .major-activity .events .event-cover-2,
+    .major-activity .events .event-cover-3,
+    .major-activity .events .event-cover-4{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 20px;
+        width: 48.5%;
+        height: 268px;
+    }
+}
+
+@media(max-width:768px){
+    .major-activity{
+        padding: 0px 16px;
+        margin: 0 auto 48px;
+        gap: 16px;
+    }
+
+    .major-activity .events{
+        gap: 16px;
+    }
+
+    .major-activity .section-title{
+        font-size: 28px;
+    }
+    .major-activity .events .event-cover-1,
+    .major-activity .events .event-cover-2,
+    .major-activity .events .event-cover-3,
+    .major-activity .events .event-cover-4{
+        font-size: 16px;
+        font-weight: 300;
+        padding: 20px;
+        width:100%;
+        height: 268px;
+    }
+}
+
+/* Engage-Section  css*/
+
+.engage-section{
+    max-width: 1366px;
+    padding: 0px 80px;
+    margin: 0 auto 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.engage-section .section-title{
+    align-self: stretch;
+    color: var(--Black, #1A1A1A);
+    text-align: center;
+    font-family: 'Noto Sans TC';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.engage-list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.engage{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 24%;
+    overflow: hidden;
+}
+
+.engage:hover{
+    cursor: pointer;
+}
+
+.engage .cover-1, .engage .cover-2, .engage .cover-3, .engage .cover-4{
+    display: flex;
+    align-self: stretch;
+    background-size: cover;
+    height: 200px;
+    padding: 8px 8px;
+    border-radius: 4px;
+}
+
+.engage .cover-1{
+    background-image: url(../element/image/sunday-service-cover.png);
+}
+
+.engage .cover-2{
+    background-image: url(../element/image/bibletalk.png);
+}
+
+.engage .cover-3{
+    background-image: url(../element/image/bible-study.png);
+}
+
+.engage .cover-4{
+    background-image: url(../element/image/contact-us.png);
+}
+
+.engage .label{
+    display: flex;
+    padding: 10px 8px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 56px;
+    background: var(--main, #F2C700);
+
+    /* Text-5 */
+    font-family: Sans-Serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 120% */
+    color: var(--black, #000);
+}
+
+.engage .name{
+    align-self: stretch;
+    color: var(--Black, #1A1A1A);
+    font-family: 'Noto Sans TC';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+}
+
+.engage .description{
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-self: stretch;
+
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+}
+
+@media(max-width:1366px){
+    .engage-section{
+        padding: 0 48px;
+    }
+    .engage-section .section-title{
+        font-size: 36px;
+    }
+    .engage{
+        width: 49%;
+    }
+    .engage .cover-1, .engage .cover-2, .engage .cover-3, .engage .cover-4{
+        height: 280px;
+        padding: 16px;
+    }
+}
+
+@media(max-width:1024px){
+    .engage-section{
+        padding: 0 24px;
+        margin: 0 auto 64px;
+    }
+    .engage-section .section-title{
+        font-size: 32px;
+    }
+    .engage{
+        width: 48.5%;
+    }
+    .engage .cover-1, .engage .cover-2, .engage .cover-3, .engage .cover-4{
+        height: 240px;
+        padding: 12px;
+    }
+}
+
+@media(max-width:768px){
+    .engage-section{
+        padding: 0 16px;
+        gap: 12px;
+        margin: 0 auto 48px;
+    }
+
+    .engage{
+        width: 100%;
+        gap:4px;
+    }
+
+    .engage-section .section-title{
+        font-size: 28px;
+    }
+
+    .engage .cover-1, .engage .cover-2, .engage .cover-3, .engage .cover-4{
+        height: 240px;
+    }
+
+    .engage .name{
+        font-size: 18px;
+    }
+    
+    .engage .description{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:414px){
+    .engage-section{
+        padding: 0 16px;
+        gap: 12px;
+        margin: 0 auto 24px;
+    }
+
+    .engage{
+        width: 100%;
+    }
+
+    .engage-section .section-title{
+        font-size: 24px;
+    }
+
+    .engage .cover-1, .engage .cover-2, .engage .cover-3, .engage .cover-4{
+        height: 240px;
+        padding: 10px;
+    }
+
+    .engage .name{
+        font-size: 16px;
+    }
+    
+    .engage .description{
+        font-size: 12px;
+    }
+}
+
+
+/* Other Event Swiper */
+
+.other-event-section{
+    display: flex;
+    max-width: 1366px;
+    padding: 0px 80px;
+    margin: 0 auto 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.swiper{
+    display:flex;
+    width: 100%;
+}
+
+.other-event-section .section-title{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+
+    color: var(--Black, #1A1A1A);
+    text-align: center;
+    font-family: 'Noto Sans TC';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.other-event-section .slider{
+    display: flex;
+    padding: 12px 0px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch!important;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.25) 100%), url(../element/image/other-event-photo.jpg);
+}
+
+.other-event-section .slider .body{
+    display: flex;
+    height: 640px;
+    padding: 0px 24px;
+    align-items: center;
+    align-self: stretch;
+}
+
+.other-event-section .slider .body .text-container{
+    display: flex;
+    padding: 48px 480px 48px 48px;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 48px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.other-event-section .banner-titlebox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.other-event-section .banner-titlebox .caption{
+    align-self: stretch;
+    color: var(--white, #FFF);
+
+    /* Other/Caption */
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 20px */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.other-event-section .banner-titlebox .title{
+    align-self: stretch;
+    color: var(--white, #FFF);
+
+    /* Heading/1 */
+    font-family: Roboto;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 59.4px */
+}
+
+.other-event-section .text-container .banner-description{
+    align-self: stretch;
+    color: var(--white, #FFF);
+
+    /* Body/L */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 25.2px */
+}
+
+.swiper-button-prev{
+    background-image: url(../element/image/menu-left.png) !important;
+    background-size: contain !important;
+    color:transparent !important;
+    height: 48px !important;
+    width: 48px !important; 
+}
+
+.swiper-button-next{
+    background-image: url(../element/image/menu-right.png) !important;
+    background-size: contain !important;
+    color:transparent !important;
+    height: 48px !important;
+    width: 48px !important; 
+}
+
+.other-event-section .swiper-pagination-bullet{
+    background-color: white;
+}
+
+@media(max-width:1366px){
+    .other-event-section{
+        padding: 0px 48px;
+        margin: 0 auto 80px;
+        gap: 24px;
+    }
+    .other-event-section .section-title{
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .other-event-section .slider{
+        padding: 12px 0px;
+        border-radius: 8px;
+    }
+    .other-event-section .slider .body{
+        height: 580px;
+        padding: 0px 24px;
+    }
+    .other-event-section .slider .body .text-container{
+        display: flex;
+        padding: 48px 240px 48px 48px;
+        gap: 24px;
+    }
+    .other-event-section .banner-titlebox .caption{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .other-event-section .banner-titlebox .title{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .other-event-section .text-container .banner-description{
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+@media(max-width:1024px){
+    .other-event-section{
+        padding: 0px 24px;
+        margin: 0 auto 64px;
+        gap: 16px;
+    }
+    .other-event-section .section-title{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .other-event-section .slider{
+        padding: 12px 0px;
+        border-radius: 8px;
+    }
+    .other-event-section .slider .body{
+        height: 540px;
+        padding: 0px 24px;
+    }
+    .other-event-section .slider .body .text-container{
+        display: flex;
+        padding: 48px 240px 48px 48px;
+        gap: 24px;
+    }
+    .other-event-section .banner-titlebox .caption{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .other-event-section .banner-titlebox .title{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .other-event-section .text-container .banner-description{
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+@media(max-width:768px){
+    .other-event-section{
+        padding: 0px 16px;
+        margin: 0 auto 48px;
+        gap: 16px;
+    }
+    .other-event-section .section-title{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .other-event-section .slider{
+        padding: 12px 0px;
+        border-radius: 8px;
+    }
+    .other-event-section .slider .body{
+        height: 360px;
+        padding: 0px 12px;
+    }
+    .other-event-section .slider .body .text-container{
+        display: flex;
+        padding: 16px 80px 24px 16px;
+        gap: 12px;
+    }
+    .other-event-section .banner-titlebox .caption{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .other-event-section .banner-titlebox .title{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .other-event-section .text-container .banner-description{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .swiper-button-prev{
+        display:none !important;
+    }
+    
+    .swiper-button-next{
+        display:none !important;
+    }
+}
+
+@media(max-width:414px){
+    .other-event-section{
+        padding: 0px 16px;
+        margin: 0 auto 24px;
+        gap: 16px;
+    }
+    .other-event-section .section-title{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .other-event-section .slider{
+        padding: 12px 0px;
+        border-radius: 8px;
+    }
+    .other-event-section .slider .body{
+        height: 200px;
+        padding: 0px 12px;
+    }
+    .other-event-section .slider .body .text-container{
+        display: flex;
+        padding: 16px 80px 24px 16px;
+        gap: 12px;
+    }
+    .other-event-section .banner-titlebox .caption{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .other-event-section .banner-titlebox .title{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .other-event-section .text-container .banner-description{
+        display: none;
+    }
+}
+
+.tcoc-bg{
+    position: absolute;
+    top: 1331px;
+    left: -240px;
+    z-index: -1;
+    transform: rotate(-11.367deg);
+    color: var(--main-light-2, #FCF4CC);
+    font-family: Nicoca;
+    font-size: 400px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.C-bg{
+    position: absolute;
+    top: 2200px;
+    left: 1600px;
+    z-index: -1;
+    width: 1217px;
+    height: 1217px;
+    background-image: url(../element/image/C-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

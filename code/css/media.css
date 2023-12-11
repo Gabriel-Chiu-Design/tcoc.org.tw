@@ -1,0 +1,492 @@
+/*Page Header Section*/
+.page-header{
+    display: flex;
+    max-width: 1366px;
+    margin: 144px auto 48px;
+    padding: 0 80px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page-header .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.page-header .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*media list*/
+
+.media{
+    display: flex;
+    max-width: 1366px;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 auto 64px;
+    padding: 0 80px;
+}
+
+.media .section-title-box{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.media .section-title-box .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    font-family: "Noto Sans TC";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.media .section-title-box .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.media .video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid var(--cool-gray-20, #DDE1E6);
+    background: var(--white, #FFF);
+    overflow: hidden;
+}
+
+.media .video .cover{
+    display: flex;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background-size: cover;
+}
+
+.media.goodnews .video.no-1 .cover,
+.media.goodnews .video.no-2 .cover,
+.media.goodnews .video.no-3 .cover,
+.media.goodnews .video.no-4 .cover,
+.media.goodnews .video.no-5 .cover,
+.media.goodnews .video.no-6 .cover{
+    background-image: url(../element/image/tcocnews.png);
+}
+
+.media.sermon .video.no-1 .cover{
+    background-image: url(../element/image/sermon-01.png);
+}
+
+.media.sermon .video.no-2 .cover{
+    background-image: url(../element/image/sermon-02.png);
+}
+
+.media.sermon .video.no-3 .cover{
+    background-image: url(../element/image/sermon-03.png);
+}
+
+.media.communion .video.no-1 .cover{
+    background-image: url(../element/image/communion-01.png);
+}
+
+.media.communion .video.no-2 .cover{
+    background-image: url(../element/image/communion-02.png);
+}
+
+.media.communion .video.no-3 .cover{
+    background-image: url(../element/image/communion-03.png);
+}
+
+.media.worship .video.no-1 .cover{
+    background-image: url(../element/image/worship-01.png);
+}
+
+.media.worship .video.no-2 .cover{
+    background-image: url(../element/image/worship-02.png);
+}
+
+.media.worship .video.no-3 .cover{
+    background-image: url(../element/image/worship-03.png);
+}
+
+.media .video .cover .play{
+    width: 48px;
+    height: 48px;
+    background-image: url(../element/icons/play.svg);
+    background-size: cover;
+}
+
+.media .video:hover{
+    .caption, .title, .description{
+        text-decoration: underline;
+    }
+
+    .cover{
+        opacity: 0.8;
+    }
+
+    .play{
+        width: 64px;
+        height: 64px;
+        transition: ease 0.3s;
+        background-image: url(../element/icons/play-hover.svg);
+    }
+}
+
+.media .video .content{
+    display: flex;
+    padding: 12px 16px;
+    flex-direction: column;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.media .video .content .caption{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: "Noto Sans TC";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
+
+.media .video .content .title{
+    align-self: stretch;
+    color: var(--black-90, rgba(0, 0, 0, 0.90));
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+}
+
+.media .video .content .description{
+    align-self: stretch;
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 12px;
+}
+
+/* Swiper Setting */
+
+
+.media .swiper-container{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    align-self: stretch;
+}
+
+.media .swiper{
+    width: 100%;
+    padding-bottom: 36px;
+}
+
+.media .swiper .swiper-pagination-bullet{
+    background-color:#F2C700;
+}
+
+.media .swiper-container .button-prev,
+.media .swiper-container .button-next{
+    color: transparent;
+    min-width: 48px !important;
+    min-height: 48px !important;
+}
+
+.media .swiper-container .button-prev{
+    background-image: url(../element/icons/prev-btn.svg);
+}
+
+.media .swiper-container .button-prev:hover{
+    background-image: url(../element/icons/prev-btn-hover.svg);
+    cursor: pointer;
+}
+
+.media .swiper-container .button-next{
+    background-image: url(../element/icons/next-btn.svg);
+}
+
+.media .swiper-container .button-next:hover{
+    background-image: url(../element/icons/next-btn-hover.svg);
+    cursor: pointer;
+}
+
+@media (max-width:1366px) {
+    .page-header{
+        margin: 120px auto 48px;
+        padding: 0 48px;
+    }
+    .page-header .title{
+        font-size: 36px;
+    }
+    .page-header .subtitle{
+        font-size: 18px;
+    }
+    .media{
+        gap: 24px;
+        margin: 0 auto 48px;
+        padding: 0 48px;
+    }
+    .media .section-title-box .title{
+        font-size: 28px;
+    }
+    .media .section-title-box .subtitle{
+        font-size: 18px;
+    }
+    .media .video{
+        border-radius: 12px;
+    }
+    .media .video .cover{
+        height: 200px;
+    }
+    .media .video .cover .play{
+        width: 48px;
+        height: 48px;
+    }
+    .media .video:hover{  
+        .play{
+            width: 64px;
+            height: 64px;
+        }
+    }
+    .media .video .content{
+        padding: 12px;
+        gap: 4px;
+    }
+    .media .video .content .caption{
+        font-size: 14px;
+    }
+    .media .video .content .title{
+        font-size: 20px;
+    }
+    .media .video .content .description{
+        font-size: 16px;
+    }
+    .media .swiper-container{
+        gap: 16px;
+    }
+    .media .swiper{
+        padding-bottom: 36px;
+    }
+    .media .swiper-container .button-prev,
+    .media .swiper-container .button-next{
+        min-width: 48px !important;
+        min-height: 48px !important;
+    }
+}
+@media (max-width:1024px) {
+    .page-header{
+        margin: 120px auto 48px;
+        padding: 0 24px;
+    }
+    .page-header .title{
+        font-size: 36px;
+    }
+    .page-header .subtitle{
+        font-size: 18px;
+    }
+    .media{
+        gap: 24px;
+        margin: 0 auto 24px;
+        padding: 0 24px;
+    }
+    .media .section-title-box .title{
+        font-size: 28px;
+    }
+    .media .section-title-box .subtitle{
+        font-size: 18px;
+    }
+    .media .video{
+        border-radius: 12px;
+    }
+    .media .video .cover{
+        height: 200px;
+    }
+    .media .video .cover .play{
+        width: 48px;
+        height: 48px;
+    }
+    .media .video:hover{  
+        .play{
+            width: 64px;
+            height: 64px;
+        }
+    }
+    .media .video .content{
+        padding: 12px;
+        gap: 4px;
+    }
+    .media .video .content .caption{
+        font-size: 14px;
+    }
+    .media .video .content .title{
+        font-size: 20px;
+    }
+    .media .video .content .description{
+        font-size: 16px;
+    }
+    .media .swiper-container{
+        gap: 16px;
+    }
+    .media .swiper{
+        padding-bottom: 36px;
+    }
+    .media .swiper-container .button-prev,
+    .media .swiper-container .button-next{
+        display:none;
+    }
+    .media .swiper .swiper-slide{
+        width: 40% !important;
+    }
+}
+@media (max-width:768px) {
+    .page-header{
+        margin: 96px auto 48px;
+        padding: 0 16px;
+    }
+    .page-header .title{
+        font-size: 32px;
+    }
+    .page-header .subtitle{
+        font-size: 18px;
+    }
+    .media{
+        gap: 12px;
+        margin: 0 auto 20px;
+        padding: 0 16px;
+    }
+    .media .section-title-box .title{
+        font-size: 24px;
+    }
+    .media .section-title-box .subtitle{
+        font-size: 16px;
+    }
+    .media .video{
+        border-radius: 8px;
+    }
+    .media .video .cover{
+        height: 180px;
+    }
+    .media .video .cover .play{
+        width: 40px;
+        height: 40px;
+    }
+    .media .video:hover{  
+        .play{
+            width: 54px;
+            height: 54px;
+        }
+    }
+    .media .video .content{
+        padding: 12px;
+        gap: 4px;
+    }
+    .media .video .content .caption{
+        font-size: 14px;
+    }
+    .media .video .content .title{
+        font-size: 20px;
+    }
+    .media .video .content .description{
+        font-size: 16px;
+        padding-top: 4px;
+    }
+    .media .swiper-container{
+        gap: 16px;
+    }
+    .media .swiper{
+        padding-bottom: 36px;
+    }
+    .media .swiper .swiper-slide{
+        width: 60% !important;
+    }
+}
+@media (max-width:414px) {
+    .page-header{
+        margin: 96px auto 48px;
+        padding: 0 16px;
+    }
+    .page-header .title{
+        font-size: 28px;
+    }
+    .page-header .subtitle{
+        font-size: 16px;
+    }
+    .media{
+        gap: 8px;
+        margin: 0 auto 12px;
+        padding: 0 16px;
+    }
+    .media .section-title-box .title{
+        font-size: 20px;
+    }
+    .media .section-title-box .subtitle{
+        font-size: 16px;
+    }
+    .media .video{
+        border-radius: 8px;
+    }
+    .media .video .cover{
+        height: 180px;
+    }
+    .media .video .cover .play{
+        width: 40px;
+        height: 40px;
+    }
+    .media .video:hover{  
+        .play{
+            width: 54px;
+            height: 54px;
+        }
+    }
+    .media .video .content{
+        padding: 12px;
+        gap: 4px;
+    }
+    .media .video .content .caption{
+        font-size: 12px;
+    }
+    .media .video .content .title{
+        font-size: 18px;
+    }
+    .media .video .content .description{
+        font-size: 14px;
+        padding-top: 4px;
+    }
+    .media .swiper-container{
+        gap: 16px;
+    }
+    .media .swiper{
+        padding-bottom: 36px;
+    }
+    .media .swiper .swiper-slide{
+        width: 80% !important;
+    }
+}

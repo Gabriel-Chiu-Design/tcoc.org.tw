@@ -1,0 +1,988 @@
+/*-------------------- wrapper css -------------------*/
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+@media(max-width:1366px){
+    .wrapper{
+        gap: 48px;
+    }
+}
+@media(max-width:1024px){
+    .wrapper{
+        gap: 48px;
+    }
+}
+@media(max-width:768px){
+    .wrapper{
+        gap: 48px;
+    }
+}
+@media(max-width:414px){
+    .wrapper{
+        gap: 48px;
+    }
+}
+
+/*------------------------  Ministry Tab Css --------------------------*/
+
+.ministry-tab{
+    display: flex;
+    max-width: 1366px;
+    width: 100%;
+    margin: 96px auto 0px;
+    padding: 12px 0px 0px;
+    justify-content: center;
+    gap: 0%;
+
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tab{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding-bottom: 12px;
+}
+
+.tab.inactive:hover{
+    border-bottom: 2px solid var(--black,rgba(0, 0, 0, 0.50));
+    cursor: pointer;
+    
+    .name{
+    color: var(--black-40, rgba(0, 0, 0, 0.50));
+    }
+    .icon{
+        opacity: 0.5;
+    }
+}
+
+.tab .icon{
+    width: 24px;
+    height: 24px;
+}
+
+.tab.active{
+    border-bottom: 3px solid var(--black,rgba(0, 0, 0, 1));
+}
+
+.tab.active .name{
+    color: var(--black, #000);
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 17.6px */
+}
+
+.tab.inactive .name{
+    color: var(--black-40, rgba(0, 0, 0, 0.25));
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 110%; /* 17.6px */
+}
+
+.tab.active .icon{
+    opacity: 1;
+}
+
+.tab.inactive .icon{
+    opacity: 0.25;
+}
+
+.tab.elderly .icon{
+    background-image: url(../element/icons/elderly.png);
+    background-size: contain;
+}
+
+.tab.married .icon{
+    background-image: url(../element/icons/married.png);
+    background-size: contain;
+}
+
+.tab.single .icon{
+    background-image: url(../element/icons/single.png);
+    background-size: contain;
+}
+
+.tab.student .icon{
+    background-image: url(../element/icons/student.png);
+    background-size: contain;
+}
+
+@media(max-width:1366px){
+    .ministry-tab{
+        width: 95%;
+        margin: 96px 48px 0px;
+        padding: 12px 0px 0px;
+    
+        box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+    }
+}
+@media(max-width:1024px){
+    .ministry-tab{
+        padding: 12px 24px 0px;
+    }
+}
+@media(max-width:768px){
+    .ministry-tab{
+        padding: 8px 16px 0px;
+    }
+    .tab{
+        gap: 4px;
+        padding-bottom: 8px;
+    }
+    .tab.inactive .name,
+    .tab.active .name{
+        font-size: 14px;
+    }
+}
+
+/*------------------------  Ministry hero section Css --------------------------*/
+
+.hero-section{
+    display: flex;
+    max-width: 1366px;
+    padding: 240px 80px 0px;
+    align-items: center;
+    gap: 48px;
+}
+
+.hero-section .cover{
+    flex: 1 0 0;
+    height: 400px;
+    background-image: url(../element/image/elderly-hero-cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.hero-section .text-box{
+    display: flex;
+    padding: 32px 0px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+    flex: 1 0 0;
+}
+
+.hero-section .text-box .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.hero-section .top .caption{
+    align-self: stretch;
+    color: var(--black, #000);
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-section .top .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    font-family: "Noto Sans TC";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.hero-section .description{
+    align-self: stretch;
+    color: var(--black-80, rgba(0, 0, 0, 0.80));
+
+    /* Body/L */
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@media(max-width:1366px){
+    .hero-section{
+        padding: 200px 48px 0px;
+        gap: 48px;
+    }
+    .hero-section .cover{
+        height: 360px;
+        border-radius: 8px;
+    }
+    .hero-section .text-box{
+        padding: 32px 0px;
+        gap: 64px;
+    }
+    .hero-section .text-box .top{
+        gap: 12px;
+    }
+    .hero-section .top .caption{
+        font-size: 18px;
+        font-weight: 350;
+    }
+    .hero-section .top .title{
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .hero-section .description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+@media(max-width:1024px){
+    .hero-section{
+        padding: 200px 24px 0px;
+        gap: 36px;
+    }
+    .hero-section .cover{
+        height: 320px;
+        border-radius: 8px;
+    }
+    .hero-section .text-box{
+        padding: 32px 0px;
+        gap: 64px;
+    }
+    .hero-section .text-box .top{
+        gap: 12px;
+    }
+    .hero-section .top .caption{
+        font-size: 18px;
+        font-weight: 350;
+    }
+    .hero-section .top .title{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .hero-section .description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+@media(max-width:768px){
+    .hero-section{
+        padding: 200px 0px 0px;
+        gap: 24px;
+        flex-direction: column;
+    }
+    .hero-section .cover{
+        height: 320px;
+        width: 100%;
+        border-radius: 0px;
+        flex: none;
+    }
+    .hero-section .text-box{
+        padding: 0px 24px;
+        gap: 24px;
+    }
+    .hero-section .text-box .top{
+        gap: 12px;
+    }
+    .hero-section .top .caption{
+        font-size: 16px;
+        font-weight: 350;
+    }
+    .hero-section .top .title{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .hero-section .description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+@media(max-width:414px){
+    .hero-section{
+        padding: 160px 0px 0px;
+    }
+    .hero-section .text-box{
+        padding: 0px 16px;
+        gap: 16px;
+    }
+    .hero-section .cover{
+        height: 240px;
+        width: 100%;
+        border-radius: 0px;
+        flex: none;
+    }
+    .hero-section .top .caption{
+        font-size: 16px;
+        font-weight: 350;
+    }
+    .hero-section .top .title{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .hero-section .description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+/*--------------------- Events Section Css --------------------*/
+
+.event{
+    display: flex;
+    max-width: 1366px;
+    padding: 0px 80px;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.event .section-title{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.event .section-title .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.event .section-title .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.event .event-grid{
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.event .event-grid .event-box{
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 2%;
+}
+
+.event .event-grid .event-box:hover{
+    padding: 16px;
+    transition: ease-out 500ms;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    .text .event-name{
+        font-weight: 500;
+    }
+    .cover{
+        height: 328px;
+    }
+}
+
+.event .event-grid .event-box .cover{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: stretch;
+    height: 360px;
+}
+
+.event-box.event-1 .cover{
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.event-box.event-2 .cover{
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.event-box.event-3 .cover{
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.event-box.event-4 .cover{
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.event-box.event-5 .cover{
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.event-box.event-6 .cover{
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.event .event-grid .event-box .text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.event .event-grid .event-box .text .event-name{
+    align-self: stretch;
+    color: var(--black, #000);
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.event .event-grid .event-box .text .details{
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.event .event-grid .event-box .text .details .caption{
+    flex: 1 0 0;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+
+.event .event-grid .event-box .text .details .date{
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+
+@media(max-width:1366px){
+    .event{
+        padding: 0px 48px;
+        gap: 24px;
+    }
+    .event .section-title .title{
+        font-size: 36px;
+    }
+    .event .section-title .subtitle{
+        font-size: 18px;
+    }
+    .event .event-grid{
+        gap: 2%;
+    }
+    .event .event-grid .event-box{
+        width: 49%;
+        gap: 8px;
+        margin-bottom: 2%;
+    }
+    .event .event-grid .event-box:hover{
+        padding: 16px;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        .text .event-name{
+            font-weight: 500;
+        }
+        .cover{
+            height: 328px;
+        }
+    }
+}
+@media(max-width:1024px){
+    .event{
+        padding: 0px 24px;
+        gap: 24px;
+    }
+    .event .section-title .title{
+        font-size: 36px;
+    }
+    .event .section-title .subtitle{
+        font-size: 18px;
+    }
+    .event .event-grid{
+        gap: 2%;
+    }
+    .event .event-grid .event-box{
+        width: 49%;
+        gap: 8px;
+        margin-bottom: 2%;
+    }
+    .event .event-grid .event-box:hover{
+        padding: 16px;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        .text .event-name{
+            font-weight: 500;
+        }
+        .cover{
+            height: 208px;
+        }
+    }
+    .event .event-grid .event-box .cover{
+        height: 240px;
+        border-radius: 8px;
+    }
+    .event .event-grid .event-box .text .event-name{
+        font-size: 20px;
+    }
+    .event .event-grid .event-box .text .details .caption{
+        font-size: 16px;
+    }
+    .event .event-grid .event-box .text .details .date{
+        font-size: 16px;
+    }
+}
+@media(max-width:768px){
+    .event{
+        padding: 0px 16px;
+        gap: 24px;
+    }
+    .event .section-title .title{
+        font-size: 32px;
+    }
+    .event .section-title .subtitle{
+        font-size: 18px;
+    }
+    .event .event-grid{
+        padding: 0 24px;
+    }
+    .event .event-grid .event-box{
+        width: 100%;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+    .event .event-grid .event-box:hover{
+        padding: 16px;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        .text .event-name{
+            font-weight: 500;
+        }
+        .cover{
+            height: 208px;
+        }
+    }
+    .event .event-grid .event-box .cover{
+        height: 240px;
+        border-radius: 8px;
+    }
+    .event .event-grid .event-box .text .event-name{
+        font-size: 20px;
+    }
+    .event .event-grid .event-box .text .details .caption{
+        font-size: 16px;
+    }
+    .event .event-grid .event-box .text .details .date{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:414px){
+    .event{
+        padding: 0px 16px;
+        gap: 12px;
+    }
+    .event .section-title .title{
+        font-size: 24px;
+    }
+    .event .section-title .subtitle{
+        font-size: 16px;
+    }
+    .event .event-grid{
+        padding: 0px;
+    }
+    .event .event-grid .event-box{
+        width: 100%;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+    .event .event-grid .event-box:hover{
+        padding: 16px;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        .text .event-name{
+            font-weight: 500;
+        }
+        .cover{
+            height: 208px;
+        }
+    }
+    .event .event-grid .event-box .cover{
+        height: 240px;
+        border-radius: 8px;
+    }
+    .event .event-grid .event-box .text{
+        gap: 2px;
+    }
+    .event .event-grid .event-box .text .event-name{
+        font-size: 18px;
+    }
+    .event .event-grid .event-box .text .details .caption{
+        font-size: 14px;
+    }
+    .event .event-grid .event-box .text .details .date{
+        font-size: 14px;
+    }
+}
+
+/*---------------  FAQ Section ----------------*/
+
+.faq-section{
+    display: flex;
+    width: 1366px;
+    padding: 0px 80px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.faq-section .section-title{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.faq-section .section-title .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.faq-section .section-title .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.faq-section .faq-list{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.faq-section .faq-list .question{
+    display: flex;
+    padding: 36px 16px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-bottom: 1px solid #C1C7CD;
+    background: var(--cool-gray-10, #F2F4F8);
+}
+
+.faq-section .faq-list .question:hover{
+    cursor: pointer;
+    background: #FAE999;
+
+    .text{
+        color:#000;
+    }
+    .arrow{
+        background-image: url(../element/icons/faq-arrow-hover.png);
+    }
+}
+
+.faq-section .faq-list .question.active{
+    background: #F2C700;
+}
+
+.faq-section .faq-list .question .text.active{
+    color: #000;
+    font-weight: 500;
+}
+
+.faq-section .faq-list .question .arrow.active{
+    background-image: url(../element/icons/faq-arrow-hover.png);
+}
+
+.faq-section .faq-list .question .q-mark{
+    width: 36px;
+    height: 36px;
+    background-image: url(../element/icons/faq-qmark.png);
+    background-size: contain;
+}
+
+.faq-section .faq-list .question .text{
+    flex: 1 0 0;
+    color: #697077;
+
+    /* Body/M */
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+.faq-section .faq-list .question .arrow{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/icons/faq-arrow.png);
+    background-size: contain;
+}
+
+.faq-section .faq-list .answer-1,
+.faq-section .faq-list .answer-2,
+.faq-section .faq-list .answer-3,
+.faq-section .faq-list .answer-4{
+    height: 0px;
+    padding: 0px 68px;
+    overflow: hidden;
+    font-size: 18px;
+    transition: ease 300ms;
+}
+
+.faq-section .faq-list .answer-1.active,
+.faq-section .faq-list .answer-2.active,
+.faq-section .faq-list .answer-3.active,
+.faq-section .faq-list .answer-4.active{
+    display: flex;
+    padding: 24px 68px;
+    gap: 8px;
+    align-self: stretch;
+    border-bottom: 1px solid var(--black, #000);
+    background: #FCF4CC;
+    height: auto;
+    overflow: visible;
+
+    flex: 1 0 0;
+    color: var(--black-80, rgba(0, 0, 0, 0.80));
+
+    /* Body/M */
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+
+    transition: ease-out 300ms;
+}
+
+@media(max-width:1366px){
+    .faq-section{
+        padding: 0px 48px;
+        gap: 24px;
+        width: 100%;
+    }
+    .faq-section .section-title .title{
+        font-size: 36px;
+    }
+    .faq-section .section-title .subtitle{
+        font-size: 18px;
+    }
+    .faq-section .faq-list .question{
+        padding: 36px 16px;
+        gap: 16px;
+    }
+    .faq-section .faq-list .question .q-mark{
+        width: 36px;
+        height: 36px;
+    }
+    .faq-section .faq-list .question .text{
+        font-size: 20px;
+    }
+    .faq-section .faq-list .question .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .answer-1,
+    .faq-section .faq-list .answer-2,
+    .faq-section .faq-list .answer-3,
+    .faq-section .faq-list .answer-4{
+        padding: 0px 68px;
+        font-size: 18px;
+    }
+    .faq-section .faq-list .answer-1.active,
+    .faq-section .faq-list .answer-2.active,
+    .faq-section .faq-list .answer-3.active,
+    .faq-section .faq-list .answer-4.active{
+        padding: 24px 68px;
+        gap: 8px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1024px){
+    .faq-section{
+        padding: 0px 24px;
+        gap: 24px;
+        width: 100%;
+    }
+    .faq-section .section-title .title{
+        font-size: 32px;
+    }
+    .faq-section .section-title .subtitle{
+        font-size: 16px;
+    }
+    .faq-section .faq-list .question{
+        padding: 36px 16px;
+        gap: 8px;
+    }
+    .faq-section .faq-list .question .q-mark{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .question .text{
+        font-size: 18px;
+    }
+    .faq-section .faq-list .question .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .answer-1,
+    .faq-section .faq-list .answer-2,
+    .faq-section .faq-list .answer-3,
+    .faq-section .faq-list .answer-4{
+        padding: 0px 48px;
+        font-size: 16px;
+    }
+    .faq-section .faq-list .answer-1.active,
+    .faq-section .faq-list .answer-2.active,
+    .faq-section .faq-list .answer-3.active,
+    .faq-section .faq-list .answer-4.active{
+        padding: 24px 48px;
+        gap: 8px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:768px){
+    .faq-section{
+        padding: 0px 16px;
+        gap: 24px;
+        width: 100%;
+    }
+    .faq-section .section-title .title{
+        font-size: 32px;
+    }
+    .faq-section .section-title .subtitle{
+        font-size: 16px;
+    }
+    .faq-section .faq-list .question{
+        padding: 28px 16px;
+        gap: 16px;
+    }
+    .faq-section .faq-list .question .q-mark{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .question .text{
+        font-size: 18px;
+    }
+    .faq-section .faq-list .question .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .answer-1,
+    .faq-section .faq-list .answer-2,
+    .faq-section .faq-list .answer-3,
+    .faq-section .faq-list .answer-4{
+        padding: 0px 56px;
+        font-size: 16px;
+    }
+    .faq-section .faq-list .answer-1.active,
+    .faq-section .faq-list .answer-2.active,
+    .faq-section .faq-list .answer-3.active,
+    .faq-section .faq-list .answer-4.active{
+        padding: 24px 56px;
+        gap: 8px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:414px){
+    .faq-section{
+        padding: 0px 16px 48px;
+        gap: 12px;
+        width: 100%;
+    }
+    .faq-section .section-title .title{
+        font-size: 24px;
+    }
+    .faq-section .section-title .subtitle{
+        font-size: 14px;
+    }
+    .faq-section .faq-list .question{
+        padding: 24px 12px;
+        gap: 8px;
+    }
+    .faq-section .faq-list .question .q-mark{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .question .text{
+        font-size: 16px;
+    }
+    .faq-section .faq-list .question .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .answer-1,
+    .faq-section .faq-list .answer-2,
+    .faq-section .faq-list .answer-3,
+    .faq-section .faq-list .answer-4{
+        padding: 0px 44px;
+        font-size: 14px;
+    }
+    .faq-section .faq-list .answer-1.active,
+    .faq-section .faq-list .answer-2.active,
+    .faq-section .faq-list .answer-3.active,
+    .faq-section .faq-list .answer-4.active{
+        padding: 24px 44px;
+        gap: 8px;
+        font-size: 14px;
+    }
+}

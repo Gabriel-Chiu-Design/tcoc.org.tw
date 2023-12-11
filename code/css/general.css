@@ -1,0 +1,749 @@
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, a, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration:none;
+}
+
+input, select{
+    outline: none;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;  
+}
+
+select{
+    -webkit-appearance: none;
+}
+
+/* ----------Header CSS----------*/
+
+.header-container{
+    margin: 0 auto;
+    display:flex;
+    width:100%;
+    background-image: url(../element/image/header-bg.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.10);
+}
+
+.header{
+    max-width: 1366px; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 80px;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 48px; 
+    display: inline-flex;
+}
+
+.tcoc-logo{
+    background: url(../element/image/tcoc-logo.png) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 232px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.header-menu{
+    flex: 1 1 0; 
+    align-self: stretch; 
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 36px; 
+    display: flex;
+    padding-top: 8px;
+}
+
+.header-menu .menu-item{
+    display: flex;
+    padding-bottom: 4px;
+    justify-content: center;
+    align-items: center;
+    color: var(--default, #000);
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header-menu .menu-item:hover{
+    border-bottom: 2px solid var(--main, #F2C700);
+    color: var(--main, #F2C700);
+}
+
+.header .btn{
+    display: flex;
+    padding: 12px 12px 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--main, #F2C700);
+}
+
+.header .btn .btn-text{
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header .btn .btn-icon-r{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/image/arrow-right.png);
+    background-size: contain;
+}
+
+.header .btn:hover{
+    background: var(--main-dark-5, #302800);
+    cursor: pointer;
+
+    .btn-text{
+        color: var(--main, #F2C700);
+    }
+    .btn-icon-r{
+        background-image: url(../element/image/arrow-right-hover.png);
+    }
+}
+
+.header .side-menu-logo{
+    display:none;
+    background-image: url(../element/image/side-menu.svg);
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+}
+
+/*Header Responsive Layout*/
+
+@media(max-width:1366px){
+    .header{
+        padding: 16px 48px;
+    }
+
+}
+
+@media(max-width:1024px){
+    .header{
+        padding: 12px 24px;
+    }
+    .tcoc-logo{
+        background-image: url(../element/image/tcoc-logo-icon-only.svg);        
+        width: 48px;
+        height: 48px; 
+    }
+    .header .side-menu-logo{
+        display: block;
+    }
+    .header .btn, .header .header-menu{
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+    .header{
+        padding: 12px 16px;
+    }
+    .header .side-menu-logo{
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+    }
+    .tcoc-logo{  
+        width: 40px;
+        height: 40px; 
+    }
+}
+
+/* ----------Footer CSS----------*/
+
+.footer-container{
+    margin: 0 auto;
+    display:flex;
+    width:100%;
+    background: var(--white, #FFF);
+    box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.10);
+}
+
+.footer{
+    display: flex;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 80px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+}
+
+.footer .profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.footer .profile .icon{
+    background: center / contain no-repeat url(../element/image/tcoc-logo.svg);
+    width: 160px;
+    height: 40px;
+}
+
+.footer .profile .name{
+    flex: 1 0 0;
+    color: var(--black, #000);
+    font-family: 'Noto Sans TC';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer .profile .social-media{
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.footer .profile .social-media .fb{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/image/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer .profile .social-media .ig{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/image/instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+
+.footer .profile .social-media .youtube{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/image/youtube.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.footer .contact .contact-method{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    flex: 1 0 0;
+    color: var(--black-80, rgba(0, 0, 0, 0.80));
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.footer .copyright .icon{
+    width: 16px;
+    height: 16px;
+    background-image: url(../element/image/copyright.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer .copyright .text{
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media(max-width:1366px){
+    .footer{
+        padding: 24px 48px;
+        gap: 48px;
+    }
+}
+
+@media(max-width:1024px){
+    .footer{
+        padding: 24px 24px;
+        gap: 48px;
+    }
+}
+
+@media(max-width:768px){
+    .footer{
+        padding: 24px;
+        gap: 24px;
+    }
+    .footer .profile{
+        flex-direction: column;
+    }
+    .footer .contact .contact-method{
+        justify-content: center;
+    }
+    .footer .contact .contact-method{
+        font-size: 14px;
+    }
+    .footer .copyright .text{
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+/*----------------- Side Menu CSS ------------------*/
+
+.side-menu.active{
+    transform: translateX(0px);
+}
+
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    height: auto;
+
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    z-index: 102;
+
+    background-image: url(../element/image/side-menu-768-bg.png);
+    box-shadow: 4px 0px 2px 1px rgba(0, 0, 0, 0.1);
+
+    transition: ease 500ms;
+    transform: translateX(-400px);
+}
+
+.side-menu .logo-section{
+    display: flex;
+    padding: 24px 8px 24px 24px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background-color: #FEF9E6;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.side-menu .logo-section .logo-container{
+    display: flex;
+    padding-right: 0px;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 0;
+    padding-left: 0px;
+}
+
+.side-menu .logo-section .logo{
+    width: 192px;
+    height: 54px;
+    background: center / contain no-repeat url(../element/image/tcoc-logo.svg);
+}
+
+.side-menu .logo-section .arrow{
+    width: 36px;
+    height: 36px;
+    margin: 6px;
+    background-image: url(../element/icons/chevron-double-left.svg);
+    background-size: cover;
+}
+
+.side-menu .menu-list{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.side-menu .menu-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.side-menu .menu-list li a{
+    width: 100%;
+    padding: 24px;
+
+    color: var(--black, #000);
+    text-align: center;
+    font-family: 'Noto Sans TC';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.side-menu .menu-list li a:hover{
+    background: var(--main-light-5, #F7DD66);
+    font-weight: 400;
+    border-bottom: 2px solid rgba(0, 0, 0, 1.0);
+}
+
+.overlay{
+    display: none;
+}
+
+.overlay.active{
+    display: block;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 101;
+    backdrop-filter: blur(4px);
+}
+
+@media(max-width:414px){
+    .side-menu.active{
+        width: 80%;
+        background-image: url(../element/image/side-menu-414-bg.png);
+    
+        z-index: 102;
+        transition: ease 500ms;
+    }
+    .side-menu .logo-section{
+        display: flex;
+        padding: 16px 8px;
+    }
+    
+    .side-menu .logo-section .logo{
+        width: 44px;
+        height: 36px;
+        background-image: url(../element/image/tcoc-logo-icon-only.svg);
+        background-size: contain;
+    }
+    .side-menu .menu-list li a{
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+    }
+}
+
+/* Location Section*/
+
+.location-section{
+    display: flex;
+    width: 100%;
+    background: var(--main-light-1, #FEF9E6);
+    margin: 0px 0px 80px;
+}
+
+.location-container{
+    display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 48px 80px;
+    flex-direction: column;
+    gap: 48px; 
+}
+
+.location-section .titlebox{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.location-section .titlebox .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    font-family: 'Noto Sans TC';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.location-section .titlebox .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: 'Noto Sans TC';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.location-section .address-list{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.location-section .location{
+    display: flex;
+    padding: 12px 0px;
+    align-items: center;
+    gap: 1%;
+    width: 23.5%;
+}
+
+.location-section .location .icon{
+    width: 48px;
+    height: 48px;
+    background-image: url(../element/image/map-marker.png);
+    background-size: cover;
+}
+
+.location-section .location .text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.location-section .location .name{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.75));
+    font-family: 'Noto Sans TC';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.location-section .location .address{
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@media(max-width:1366px){
+    .location-section{
+        margin: 0 0 64px;
+    }
+    .location-container{
+        padding: 48px 48px;
+        gap: 48px; 
+    }
+    .location-section .titlebox .title{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .location-section .titlebox .subtitle{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .location-section .address-list{
+        gap: 24px;
+    }
+    .location-section .location{
+        gap: 1%;
+        width: 23%;
+    }
+    .location-section .location .text-box{
+        gap: 8px;
+    }
+    .location-section .location .name{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .location-section .location .address{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media(max-width:1024px){
+    .location-section{
+        margin: 0 0 48px;
+    }
+    .location-container{
+        padding: 24px 24px;
+        gap: 48px; 
+    }
+    .location-section .titlebox .title{
+        font-size: 32px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .location-section .titlebox .subtitle{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .location-section .address-list{
+        gap: 24px;
+        justify-content: space-around;
+    }
+    .location-section .location{
+        padding: 12px 0px;
+        gap: 12px;
+        width: 31%;
+    }
+    .location-section .location .text-box{
+        gap: 8px;
+    }
+    .location-section .location .name{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .location-section .location .address{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media(max-width:768px){
+    .location-section{
+        margin: 0 0 24px;
+    }
+    .location-container{
+        padding: 24px;
+        gap: 24px; 
+    }
+    .location-section .titlebox .title{
+        font-size: 32px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .location-section .titlebox .subtitle{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .location-section .address-list{
+        gap: 1%;
+    }
+    .location-section .location{
+        padding: 12px 0px;
+        gap: 12px;
+        width: 45%;
+    }
+    .location-section .location .text-box{
+        gap: 4px;
+    }
+    .location-section .location .name{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .location-section .location .address{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .location-section .location .icon{
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media(max-width:414px){
+    .location-section{
+        margin: 0 0 16px;
+    }
+    .location-container{
+        padding: 24px 0px;
+        gap: 24px;
+        width: 100%;
+    }
+    .location-section .titlebox .title{
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .location-section .titlebox .subtitle{
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .location-section .address-list{
+        gap: 16px;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        justify-content: flex-start;
+        padding: 0 16px;
+    }
+    .location-section .location{
+        padding: 12px 0px;
+        gap: 8px;
+        width: 100%;
+    }
+}

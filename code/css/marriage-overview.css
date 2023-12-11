@@ -1,0 +1,1532 @@
+/* Marriage Counselling Section*/
+
+.marriage-counselling-section{
+    display: flex;
+    max-width: 1366px;
+    margin: 144px auto 80px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.marriage-counselling-section .section-title-box{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.marriage-counselling-section .section-title-box .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.marriage-counselling-section .section-title-box .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.marriage-counselling-section .section-title-box .description{
+    align-self: stretch;
+    padding: 24px 144px 0px;
+    color: var(--black-80, rgba(0, 0, 0, 0.80));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.marriage-counselling-section .concept-list{
+    display: flex;
+    padding: 48px 200px 0px;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.marriage-counselling-section .concept-list .concept{
+    display: flex;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.marriage-counselling-section .concept-list .concept .cover{
+    display: flex;
+    height: 240px;
+    flex:1 0 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 4px;
+    position: relative;
+}
+
+.marriage-counselling-section .concept-list .concept .cover .chip{
+    /*layout*/
+    display: flex;
+    padding: 2px 6px;
+    justify-content: center;
+    align-items: center;
+
+    /*position*/
+    position: absolute;
+    left: 8px;
+    top: 8px;
+
+    /*style*/
+    border-radius: 56px;
+    background: var(--main, #F2C700);
+    color: var(--black, #000);
+
+    /* Text-5 */
+    font-family: "Noto Sans TC";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 120% */
+    letter-spacing: 0.1px;
+}
+
+.marriage-counselling-section .concept-list .concept .text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex:1 0 0;
+}
+
+.marriage-counselling-section .concept-list .concept .text .title{
+    align-self: stretch;
+    color: var(--Black, #1A1A1A);
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+}
+
+.marriage-counselling-section .concept-list .concept .text .subtitle{
+    align-self: stretch;
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+}
+
+.marriage-counselling-section .concept-list .concept-1 .cover{
+    background-image: url(../element/image/counselling-concept-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.marriage-counselling-section .concept-list .concept-2 .cover{
+    background-image: url(../element/image/counselling-concept-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.marriage-counselling-section .concept-list .concept-3 .cover{
+    background-image: url(../element/image/counselling-concept-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.marriage-counselling-section .concept-list .concept-4 .cover{
+    background-image: url(../element/image/counselling-concept-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.marriage-counselling-section .concept-list .concept-5 .cover{
+    background-image: url(../element/image/counselling-concept-5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.marriage-counselling-section .more{
+    display: flex;
+    padding-top: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.marriage-counselling-section .more .caption{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+
+.marriage-counselling-section .more .btn.outline{
+    display: flex;
+    padding: 12px 12px 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1.5px solid var(--black, #000);
+}
+
+.marriage-counselling-section .more .btn.outline .btn-text{
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.marriage-counselling-section .more .btn.outline .btn-icon-r{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/image/arrow-right.png);
+    background-size: contain;
+}
+
+.marriage-counselling-section .more .btn.outline:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.90);
+
+    .btn-text{
+        color: white;
+    }
+    .btn-icon-r{
+        background-image: url(../element/image/outline-arrow-right-hover.svg);
+    }
+}
+
+@media(max-width:1366px){
+    .marriage-counselling-section{
+        margin: 120px auto 80px;
+        gap: 24px;
+        padding: 0 48px;
+    }
+    .marriage-counselling-section .section-title-box .title{
+        font-size: 40px;
+    }
+    .marriage-counselling-section .section-title-box .subtitle{
+        font-size: 20px;
+    }
+    .marriage-counselling-section .section-title-box .description{
+        padding: 24px 64px 0px;
+        font-size: 18px;
+    }
+    .marriage-counselling-section .concept-list{
+        padding: 48px 64px 0px;
+        gap: 48px;
+    }
+    .marriage-counselling-section .concept-list .concept{
+        gap: 48px;
+    }
+    .marriage-counselling-section .concept-list .concept .cover{
+        height: 240px;
+        flex:1 0 0;
+        gap: 10px;
+        border-radius: 4px;
+    }
+    .marriage-counselling-section .concept-list .concept .cover .chip{
+        /*layout*/
+        padding: 2px 6px;
+        /*position*/
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        /*style*/
+        border-radius: 56px;
+        /* Text-5 */
+        font-size: 10px;
+    }
+    .marriage-counselling-section .concept-list .concept .text{
+        gap: 12px;
+    }
+    .marriage-counselling-section .concept-list .concept .text .title{
+        font-size: 20px;
+    }
+    .marriage-counselling-section .concept-list .concept .text .subtitle{
+        font-size: 18px;
+    }
+    .marriage-counselling-section .more{
+        padding-top: 24px;
+        gap: 12px;
+    }
+    .marriage-counselling-section .more .caption{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1024px){
+    .marriage-counselling-section{
+        margin: 120px auto 48px;
+        gap: 24px;
+        padding: 0 24px;
+    }
+    .marriage-counselling-section .section-title-box .title{
+        font-size: 36px;
+    }
+    .marriage-counselling-section .section-title-box .subtitle{
+        font-size: 20px;
+    }
+    .marriage-counselling-section .section-title-box .description{
+        padding: 24px 0px 0px;
+        font-size: 18px;
+    }
+    .marriage-counselling-section .concept-list{
+        padding: 24px 0px 0px;
+        gap: 24px;
+    }
+    .marriage-counselling-section .concept-list .concept{
+        gap: 24px;
+    }
+    .marriage-counselling-section .concept-list .concept .cover{
+        height: 240px;
+        flex:1 0 0;
+        gap: 10px;
+        border-radius: 4px;
+    }
+    .marriage-counselling-section .concept-list .concept .cover .chip{
+        /*layout*/
+        padding: 2px 6px;
+        /*position*/
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        /*style*/
+        border-radius: 56px;
+        /* Text-5 */
+        font-size: 10px;
+    }
+    .marriage-counselling-section .concept-list .concept .text{
+        gap: 12px;
+    }
+    .marriage-counselling-section .concept-list .concept .text .title{
+        font-size: 20px;
+    }
+    .marriage-counselling-section .concept-list .concept .text .subtitle{
+        font-size: 18px;
+    }
+    .marriage-counselling-section .more{
+        padding-top: 0px;
+        gap: 12px;
+    }
+    .marriage-counselling-section .more .caption{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:768px){
+    .marriage-counselling-section{
+        margin: 96px auto 48px;
+        gap: 24px;
+        padding: 0 16px;
+    }
+    .marriage-counselling-section .section-title-box .title{
+        font-size: 32px;
+    }
+    .marriage-counselling-section .section-title-box .subtitle{
+        font-size: 18px;
+    }
+    .marriage-counselling-section .section-title-box .description{
+        display:none;
+    }
+    .marriage-counselling-section .concept-list{
+        padding: 0px 24px;
+        gap: 48px;
+    }
+    .marriage-counselling-section .concept-list .concept{
+        gap: 12px;
+        flex-direction: column;
+    }
+    .marriage-counselling-section .concept-list .concept .cover{
+        min-height: 320px;
+        width: 100%;
+        border-radius: 4px;
+    }
+    .marriage-counselling-section .concept-list .concept .cover .chip{
+        /*layout*/
+        padding: 2px 6px;
+        /*position*/
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        /*style*/
+        border-radius: 56px;
+        /* Text-5 */
+        font-size: 10px;
+    }
+    .marriage-counselling-section .concept-list .concept .text{
+        gap: 12px;
+    }
+    .marriage-counselling-section .concept-list .concept .text .title{
+        font-size: 18px;
+    }
+    .marriage-counselling-section .concept-list .concept .text .subtitle{
+        font-size: 16px;
+    }
+    .marriage-counselling-section .more{
+        padding-top: 0px;
+        gap: 8px;
+    }
+    .marriage-counselling-section .more .caption{
+        font-size: 14px;
+    }
+}
+@media(max-width:414px){
+    .marriage-counselling-section{
+        margin: 88px auto 48px;
+        gap: 16px;
+    }
+    .marriage-counselling-section .section-title-box .title{
+        font-size: 24px;
+    }
+    .marriage-counselling-section .section-title-box .subtitle{
+        font-size: 16px;
+    }
+    .marriage-counselling-section .section-title-box .description{
+        display:none;
+    }
+    .marriage-counselling-section .concept-list{
+        padding: 0px;
+        gap: 24px;
+    }
+    .marriage-counselling-section .concept-list .concept{
+        gap: 8px;
+        flex-direction: column;
+    }
+    .marriage-counselling-section .concept-list .concept .cover{
+        min-height: 200px;
+        width: 100%;
+        border-radius: 4px;
+    }
+    .marriage-counselling-section .concept-list .concept .cover .chip{
+        /*layout*/
+        padding: 2px 6px;
+        /*position*/
+        position: absolute;
+        left: 12px;
+        top: 12px;
+        /*style*/
+        border-radius: 56px;
+        /* Text-5 */
+        font-size: 10px;
+    }
+    .marriage-counselling-section .concept-list .concept .text{
+        gap: 4px;
+    }
+    .marriage-counselling-section .concept-list .concept .text .title{
+        font-size: 16px;
+    }
+    .marriage-counselling-section .concept-list .concept .text .subtitle{
+        font-size: 14px;
+    }
+    .marriage-counselling-section .more{
+        padding-top: 8px;
+        gap: 8px;
+    }
+    .marriage-counselling-section .more .caption{
+        font-size: 14px;
+    }
+}
+
+/* Information Details Section */
+
+.information-section{
+    display: flex;
+    max-width: 1366px;
+    margin: 0px auto 80px;
+    padding: 0 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.information-section .section-title-box{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.information-section .section-title-box .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.information-section .section-title-box .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.information-section .location-list{
+    align-self: stretch;
+    display: flex;
+    gap: 18px;
+}
+
+.information-section .location-list .location{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    gap: 8px;
+}
+
+.information-section .location-list .location .cover{
+    display: flex;
+    height: 240px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.information-section .location-list .location .chip{
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    border-radius: 56px;
+    background: var(--main, #F2C700);
+
+    color: var(--black, #000);
+
+    /* Text-5 */
+    font-family: "Noto Sans TC";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+}
+
+.information-section .location-list .location .text{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.information-section .location-list .location .text .title{
+    align-self: stretch;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+}
+
+.information-section .location-list .location.location-1 .cover{
+    background-image: url(../element/image/location-1.png);
+}
+
+.information-section .location-list .location.location-2 .cover{
+    background-image: url(../element/image/location-2.png);
+}
+
+.information-section .location-list .location.location-3 .cover{
+    background-image: url(../element/image/location-3.png);
+}
+
+.information-section .information{
+    display: flex;
+    padding: 24px 80px 0px 80px;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.information-section .information .details{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.information-section .information .details .bar{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.information-section .information .details .bar .title{
+    align-self: stretch;
+    color: var(--Black, #1A1A1A);
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+}
+
+.information-section .information .details .bar .description{
+    display: flex;
+    padding-bottom: 12px;
+    flex-direction: column;
+    align-self: stretch;
+
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
+}
+
+.information-section .information .details .bar .description ul{
+    padding-left: 24px;
+    list-style: url(../element/icons/menu-right.svg);
+}
+.information-section .information .details .bar .description li{
+    line-height: 150%;
+}
+
+.information-section .information .others{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.information-section .information .others .contact{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-self: stretch;
+    border-radius: 24px;
+    border: 1px solid #DDE1E6;
+    gap: 24px;
+}
+
+.information-section .information .others .contact .icon{
+    width: 48px;
+    height: 48px;
+    background-image: url(../element/icons/contacts.svg);
+    background-size: cover;
+}
+
+.information-section .information .others .contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.information-section .information .others .contact-info .rwd{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.information-section .information .others .contact-info .title-box{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-self: stretch;
+}
+.information-section .information .others .title-box .eng-title{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 22px */
+}
+
+.information-section .information .others .title-box .chi-title{
+    align-self: stretch;
+    color: var(--cool-gray-90, #21272A);
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 26.4px */
+}
+
+.information-section .information .others .contact .contact-person{
+    display: flex;
+    padding-top: 16px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.information-section .information .others .contact .contact-person .icon{
+    width: 48px;
+    height: 48px;
+    background-image: url(../element/icons/profile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.information-section .information .others .contact .contact-person .title-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+}
+
+.information-section .information .others .contact .contact-person .name{
+    align-self: stretch;
+    color: var(--cool-gray-90, #21272A);
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 22px */
+}
+
+.information-section .information .others .contact .contact-person .phone{
+    align-self: stretch;
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+}
+
+.information-section .information .others .btn{
+    display: flex;
+    padding: 12px 12px 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--main, #F2C700);
+}
+
+.information-section .information .others .btn .btn-text{
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.information-section .information .others .btn .btn-icon-r{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/image/arrow-right.png);
+    background-size: contain;
+}
+
+.information-section .information .others .btn:hover{
+    background: var(--main-dark-5, #302800);
+    cursor: pointer;
+
+    .btn-text{
+        color: var(--main, #F2C700);
+    }
+    .btn-icon-r{
+        background-image: url(../element/image/arrow-right-hover.png);
+    }
+}
+
+.information-section .information .others .fee .icon{
+    width: 48px;
+    height: 48px;
+    background-image: url(../element/icons/coin.svg);
+}
+
+.information-section .information .others .fee .price{
+    align-self: stretch;
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 22px */
+}
+
+@media(max-width:1366px){
+    .information-section{
+        margin: 0px auto 80px;
+        padding: 0 48px;
+        gap: 24px;
+    }
+    .information-section .section-title-box .title{
+        font-size: 36px;
+    }
+    .information-section .section-title-box .subtitle{
+        font-size: 20px;
+    }
+    .information-section .location-list{
+        gap: 16px;
+    }
+    .information-section .location-list .location{
+        gap: 8px;
+    }
+    .information-section .location-list .location .cover{
+        height: 240px;
+        border-radius: 4px;
+    }
+    .information-section .location-list .location .text .title{
+        font-size: 18px;
+    }
+
+    /*Information List*/
+    .information-section .information{
+        padding: 24px 24px 0px;
+        gap: 16px;
+    }
+    .information-section .information .details{
+        gap: 12px;
+    }
+    .information-section .information .details .bar{
+        gap: 8px;
+    }
+    .information-section .information .details .bar .title{
+        font-size: 20px;
+    }
+    .information-section .information .details .bar .description{
+        padding-bottom: 12px;
+        font-size: 18px;
+    }
+    .information-section .information .details .bar .description ul{
+        padding-left: 24px;
+    }
+    .information-section .information .details .bar .description li{
+        line-height: 150%;
+    }
+    .information-section .information .others{
+        width: 360px;
+        gap: 16px;
+    }
+    .information-section .information .others .contact{
+        padding: 24px;
+        border-radius: 24px;
+        border: 1px solid #DDE1E6;
+    }
+    .information-section .information .others .contact .icon{
+        width: 48px;
+        height: 48px;
+    }
+    .information-section .information .others .contact-info{ 
+        gap: 16px;
+    }
+    .information-section .information .others .contact-info .rwd{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .information-section .information .others .contact-info .title-box{
+        gap: 4px;
+    }
+    .information-section .information .others .title-box .eng-title{
+        font-size: 18px;
+    }
+    .information-section .information .others .title-box .chi-title{
+        font-size: 20px;
+    }
+    .information-section .information .others .contact .contact-person{
+        padding-top: 16px;
+        gap: 16px;
+    }
+    .information-section .information .others .contact .contact-person .icon{
+        width: 48px;
+        height: 48px;
+    }
+    .information-section .information .others .contact .contact-person .name,
+    .information-section .information .others .contact .contact-person .phone,
+    .information-section .information .others .fee .price{
+        font-size: 18px;
+    }
+    .information-section .information .others .btn{
+        padding: 12px 12px 12px 24px;
+        gap: 10px;
+        border-radius: 4px;
+    }
+    .information-section .information .others .btn .btn-text{
+        font-size: 16px;
+    }
+    .information-section .information .others .btn .btn-icon-r{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media(max-width:1024px){
+    .information-section{
+        margin: 0px auto 48px;
+        padding: 0 24px;
+        gap: 16px;
+    }
+    .information-section .section-title-box .title{
+        font-size: 32px;
+    }
+    .information-section .section-title-box .subtitle{
+        font-size: 18px;
+    }
+    .information-section .location-list{
+        gap: 16px;
+    }
+    .information-section .location-list .location{
+        gap: 8px;
+    }
+    .information-section .location-list .location .cover{
+        height: 200px;
+        border-radius: 4px;
+    }
+    .information-section .location-list .location .text .title{
+        font-size: 16px;
+    }
+
+    /*Information List*/
+    .information-section .information{
+        padding: 24px 48px 0px;
+        gap: 48px;
+        flex-direction: column;
+    }
+    .information-section .information .details{
+        gap: 12px;
+    }
+    .information-section .information .details .bar{
+        gap: 8px;
+    }
+    .information-section .information .details .bar .title{
+        font-size: 20px;
+    }
+    .information-section .information .details .bar .description{
+        padding-bottom: 12px;
+        font-size: 18px;
+    }
+    .information-section .information .details .bar .description ul{
+        padding-left: 24px;
+    }
+    .information-section .information .details .bar .description li{
+        line-height: 150%;
+    }
+    .information-section .information .others{
+        width: 100%;
+        gap: 16px;
+        flex-direction: row;
+    }
+    .information-section .information .others .contact{
+        padding: 24px;
+        border-radius: 12px;
+        border: 1px solid #DDE1E6;
+        flex: 2 0 0;
+    }
+    .information-section .information .others .contact-info{
+        gap: 16px;
+    }
+    .information-section .information .others .contact-info .rwd{
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+    }
+    .information-section .information .others .contact-info .title-box{
+        gap: 4px;
+    }
+    .information-section .information .others .title-box .eng-title{
+        font-size: 16px;
+    }
+    .information-section .information .others .title-box .chi-title{
+        font-size: 20px;
+    }
+    .information-section .information .others .contact .contact-person{
+        padding-top: 16px;
+        gap: 16px;
+    }
+    .information-section .information .others .contact .icon{
+        width: 36px;
+        height: 36px;
+        background-size: contain;
+    }
+    .information-section .information .others .contact .contact-person .icon{
+        width: 48px;
+        height: 48px;
+    }
+    .information-section .information .others .contact .contact-person .name,
+    .information-section .information .others .contact .contact-person .phone,
+    .information-section .information .others .fee .price{
+        font-size: 18px;
+    }
+    .information-section .information .others .btn{
+        padding: 12px 12px 12px 24px;
+        gap: 10px;
+        border-radius: 4px;
+    }
+    .information-section .information .others .btn .btn-text{
+        font-size: 16px;
+    }
+    .information-section .information .others .btn .btn-icon-r{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media(max-width:768px){
+    .information-section{
+        margin: 0px auto 48px;
+        padding: 0 16px;
+        gap: 16px;
+    }
+    .information-section .section-title-box .title{
+        font-size: 28px;
+    }
+    .information-section .section-title-box .subtitle{
+        font-size: 16px;
+    }
+    .information-section .location-list{
+        gap: 16px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 24px;
+    }
+    .information-section .location-list .location{
+        gap: 8px;
+    }
+    .information-section .location-list .location .cover{
+        height: 200px;
+        width: 320px;
+        border-radius: 4px;
+    }
+    .information-section .location-list .location .text .title{
+        font-size: 14px;
+    }
+
+    /*Information List*/
+    .information-section .information{
+        padding: 0px 24px 0px;
+        gap: 24px;
+        flex-direction: column;
+    }
+    .information-section .information .details{
+        gap: 12px;
+    }
+    .information-section .information .details .bar{
+        gap: 8px;
+    }
+    .information-section .information .details .bar .title{
+        font-size: 18px;
+    }
+    .information-section .information .details .bar .description{
+        padding-bottom: 0px;
+        font-size: 16px;
+    }
+    .information-section .information .details .bar .description ul{
+        padding-left: 24px;
+    }
+    .information-section .information .details .bar .description li{
+        line-height: 150%;
+    }
+    .information-section .information .others{
+        width: 100%;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .information-section .information .others .contact{
+        padding: 24px;
+        border-radius: 8px;
+        border: 1px solid #DDE1E6;
+    }
+    .information-section .information .others .contact-info{  
+        gap: 16px;
+    }
+    .information-section .information .others .contact-info .title-box{
+        gap: 4px;
+    }
+    .information-section .information .others .title-box .eng-title{
+        font-size: 14px;
+    }
+    .information-section .information .others .title-box .chi-title{
+        font-size: 18px;
+    }
+    .information-section .information .others .contact .contact-person{
+        padding-top: 16px;
+        gap: 16px;
+    }
+    .information-section .information .others .contact .icon{
+        width: 36px;
+        height: 36px;
+        background-size: contain;
+    }
+    .information-section .information .others .contact .contact-person .icon{
+        width: 48px;
+        height: 48px;
+    }
+    .information-section .information .others .contact .contact-person .name,
+    .information-section .information .others .contact .contact-person .phone{
+        font-size: 16px;
+    }
+    .information-section .information .others .btn{
+        padding: 12px 12px 12px 24px;
+        gap: 10px;
+        border-radius: 4px;
+    }
+    .information-section .information .others .btn .btn-text{
+        font-size: 16px;
+    }
+    .information-section .information .others .btn .btn-icon-r{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media(max-width:414px){
+    .information-section{
+        margin: 0px auto 48px;
+    }
+    .information-section .section-title-box .title{
+        font-size: 24px;
+    }
+    .information-section .section-title-box .subtitle{
+        font-size: 16px;
+    }
+    .information-section .location-list{
+        gap: 16px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 12px;
+    }
+    .information-section .location-list .location{
+        gap: 8px;
+    }
+    .information-section .location-list .location .cover{
+        height: 200px;
+        width: 320px;
+        border-radius: 4px;
+    }
+    .information-section .location-list .location .text .title{
+        font-size: 14px;
+    }
+
+    /*Information List*/
+    .information-section .information{
+        padding: 0px;
+        gap: 24px;
+        flex-direction: column;
+    }
+    .information-section .information .details{
+        gap: 12px;
+    }
+    .information-section .information .details .bar{
+        gap: 4px;
+    }
+    .information-section .information .details .bar .title{
+        font-size: 16px;
+    }
+    .information-section .information .details .bar .description{
+        padding-bottom: 0px;
+        font-size: 15px;
+    }
+    .information-section .information .details .bar .description ul{
+        padding-left: 24px;
+    }
+    .information-section .information .details .bar .description li{
+        line-height: 150%;
+    }
+    .information-section .information .others{
+        width: 100%;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .information-section .information .others .contact{
+        padding: 24px;
+        border-radius: 8px;
+        border: 1px solid #DDE1E6;
+    }
+    .information-section .information .others .contact-info{  
+        gap: 16px;
+    }
+    .information-section .information .others .contact-info .title-box{
+        gap: 4px;
+    }
+    .information-section .information .others .title-box .eng-title{
+        font-size: 14px;
+    }
+    .information-section .information .others .title-box .chi-title{
+        font-size: 18px;
+    }
+    .information-section .information .others .contact .contact-person{
+        padding-top: 16px;
+        gap: 16px;
+    }
+    .information-section .information .others .contact .icon{
+        width: 36px;
+        height: 36px;
+        background-size: contain;
+    }
+    .information-section .information .others .contact .contact-person .icon{
+        width: 48px;
+        height: 48px;
+    }
+    .information-section .information .others .contact .contact-person .name,
+    .information-section .information .others .contact .contact-person .phone{
+        font-size: 16px;
+    }
+    .information-section .information .others .btn{
+        padding: 12px 12px 12px 24px;
+        gap: 10px;
+        border-radius: 4px;
+    }
+    .information-section .information .others .btn .btn-text{
+        font-size: 16px;
+    }
+    .information-section .information .others .btn .btn-icon-r{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+/*---------------  FAQ Section ----------------*/
+
+.faq-section{
+    display: flex;
+    width: 1366px;
+    padding: 0px 80px;
+    margin: 0 auto 80px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.faq-section .section-title{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.faq-section .section-title .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.faq-section .section-title .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.faq-section .faq-list{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.faq-section .faq-list .question{
+    display: flex;
+    padding: 36px 24px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-bottom: 1px solid #C1C7CD;
+    background: var(--cool-gray-10, #F2F4F8);
+}
+
+.faq-section .faq-list .question:hover{
+    cursor: pointer;
+    background: #FAE999;
+
+    .text{
+        color:#000;
+    }
+    .arrow{
+        background-image: url(../element/icons/faq-arrow-hover.png);
+    }
+}
+
+.faq-section .faq-list .question.active{
+    background: #F2C700;
+}
+
+.faq-section .faq-list .question .text.active{
+    color: #000;
+    font-weight: 500;
+}
+
+.faq-section .faq-list .question .arrow.active{
+    background-image: url(../element/icons/faq-arrow-hover.png);
+}
+
+.faq-section .faq-list .question .q-mark{
+    width: 36px;
+    height: 36px;
+    background-image: url(../element/icons/faq-qmark.png);
+    background-size: contain;
+}
+
+.faq-section .faq-list .question .text{
+    flex: 1 0 0;
+    color: #697077;
+
+    /* Body/M */
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+.faq-section .faq-list .question .arrow{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/icons/faq-arrow.png);
+    background-size: contain;
+}
+
+.faq-section .faq-list .answer-1,
+.faq-section .faq-list .answer-2,
+.faq-section .faq-list .answer-3,
+.faq-section .faq-list .answer-4{
+    height: 0px;
+    padding: 0px 76px;
+    overflow: hidden;
+    font-size: 18px;
+    transition: ease 300ms;
+}
+
+.faq-section .faq-list .answer-1.active,
+.faq-section .faq-list .answer-2.active,
+.faq-section .faq-list .answer-3.active,
+.faq-section .faq-list .answer-4.active{
+    display: flex;
+    padding: 24px 76px;
+    gap: 8px;
+    align-self: stretch;
+    border-bottom: 1px solid var(--black, #000);
+    background: #FCF4CC;
+    height: auto;
+    overflow: visible;
+
+    flex: 1 0 0;
+    color: var(--black-80, rgba(0, 0, 0, 0.80));
+
+    /* Body/M */
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+
+    transition: ease-out 300ms;
+}
+
+@media(max-width:1366px){
+    .faq-section{
+        padding: 0px 48px;
+        gap: 24px;
+        width: 100%;
+        margin: 0 auto 80px;
+    }
+    .faq-section .section-title .title{
+        font-size: 36px;
+    }
+    .faq-section .section-title .subtitle{
+        font-size: 18px;
+    }
+    .faq-section .faq-list .question{
+        padding: 36px 16px;
+        gap: 16px;
+    }
+    .faq-section .faq-list .question .q-mark{
+        width: 36px;
+        height: 36px;
+    }
+    .faq-section .faq-list .question .text{
+        font-size: 20px;
+    }
+    .faq-section .faq-list .question .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .answer-1,
+    .faq-section .faq-list .answer-2,
+    .faq-section .faq-list .answer-3,
+    .faq-section .faq-list .answer-4{
+        padding: 0px 68px;
+        font-size: 18px;
+    }
+    .faq-section .faq-list .answer-1.active,
+    .faq-section .faq-list .answer-2.active,
+    .faq-section .faq-list .answer-3.active,
+    .faq-section .faq-list .answer-4.active{
+        padding: 24px 68px;
+        gap: 8px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1024px){
+    .faq-section{
+        padding: 0px 24px;
+        gap: 24px;
+        margin: 0 auto 48px;
+        width: 100%;
+    }
+    .faq-section .section-title .title{
+        font-size: 32px;
+    }
+    .faq-section .section-title .subtitle{
+        font-size: 16px;
+    }
+    .faq-section .faq-list .question{
+        padding: 36px 16px;
+        gap: 8px;
+    }
+    .faq-section .faq-list .question .q-mark{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .question .text{
+        font-size: 18px;
+    }
+    .faq-section .faq-list .question .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .answer-1,
+    .faq-section .faq-list .answer-2,
+    .faq-section .faq-list .answer-3,
+    .faq-section .faq-list .answer-4{
+        padding: 0px 48px;
+        font-size: 16px;
+    }
+    .faq-section .faq-list .answer-1.active,
+    .faq-section .faq-list .answer-2.active,
+    .faq-section .faq-list .answer-3.active,
+    .faq-section .faq-list .answer-4.active{
+        padding: 24px 48px;
+        gap: 8px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:768px){
+    .faq-section{
+        padding: 0px 16px;
+        gap: 24px;
+        width: 100%;
+    }
+    .faq-section .section-title .title{
+        font-size: 32px;
+    }
+    .faq-section .section-title .subtitle{
+        font-size: 16px;
+    }
+    .faq-section .faq-list .question{
+        padding: 28px 16px;
+        gap: 16px;
+    }
+    .faq-section .faq-list .question .q-mark{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .question .text{
+        font-size: 18px;
+    }
+    .faq-section .faq-list .question .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .answer-1,
+    .faq-section .faq-list .answer-2,
+    .faq-section .faq-list .answer-3,
+    .faq-section .faq-list .answer-4{
+        padding: 0px 56px;
+        font-size: 16px;
+    }
+    .faq-section .faq-list .answer-1.active,
+    .faq-section .faq-list .answer-2.active,
+    .faq-section .faq-list .answer-3.active,
+    .faq-section .faq-list .answer-4.active{
+        padding: 24px 56px;
+        gap: 8px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:414px){
+    .faq-section{
+        padding: 0px 16px;
+        gap: 12px;
+        width: 100%;
+    }
+    .faq-section .section-title .title{
+        font-size: 24px;
+    }
+    .faq-section .section-title .subtitle{
+        font-size: 14px;
+    }
+    .faq-section .faq-list .question{
+        padding: 24px 12px;
+        gap: 8px;
+    }
+    .faq-section .faq-list .question .q-mark{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .question .text{
+        font-size: 16px;
+    }
+    .faq-section .faq-list .question .arrow{
+        width: 24px;
+        height: 24px;
+    }
+    .faq-section .faq-list .answer-1,
+    .faq-section .faq-list .answer-2,
+    .faq-section .faq-list .answer-3,
+    .faq-section .faq-list .answer-4{
+        padding: 0px 44px;
+        font-size: 14px;
+    }
+    .faq-section .faq-list .answer-1.active,
+    .faq-section .faq-list .answer-2.active,
+    .faq-section .faq-list .answer-3.active,
+    .faq-section .faq-list .answer-4.active{
+        padding: 24px 44px;
+        gap: 8px;
+        font-size: 14px;
+    }
+}

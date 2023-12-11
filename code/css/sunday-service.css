@@ -1,0 +1,414 @@
+/* Hero Section*/
+
+.hero-section{
+    display: flex;
+    max-width: 1366px;
+    flex-direction: column;
+    margin: 144px auto 48px;
+    padding: 0 80px;
+    gap: 24px;
+}
+
+.hero-section .title-box{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.hero-section .title-box .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-section .title-box .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-section .cover{
+    height: 540px;
+    border-radius: 4px;
+    align-self: stretch;
+    background-image: url(../element/image/sunday-service.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+@media(max-width:1366px){
+    .hero-section{
+        margin: 120px auto 48px;
+        padding: 0 48px;
+        gap: 24px;
+    }
+    .hero-section .title-box .title{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .hero-section .title-box .subtitle{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .hero-section .cover{
+        height: 540px;
+        background-size: cover;
+    }
+}
+
+@media(max-width:1024px){
+    .hero-section{
+        margin: 120px auto 48px;
+        padding: 0 24px;
+        gap: 16px;
+    }
+    .hero-section .title-box .title{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .hero-section .title-box .subtitle{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .hero-section .cover{
+        height: 480px;
+        background-size: cover;
+    }
+}
+
+@media(max-width:768px){
+    .hero-section{
+        margin: 120px auto 24px;
+        padding: 0px;
+        gap: 16px;
+    }
+    .hero-section .title-box .title{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .hero-section .title-box .subtitle{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .hero-section .cover{
+        height: 400px;
+        background-size: cover;
+        border-radius: 0px;
+    }
+}
+
+@media(max-width:414px){
+    .hero-section{
+        margin: 80px auto 24px;
+        padding: 0px;
+        gap: 12px;
+    }
+    .hero-section .title-box .title{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .hero-section .title-box .subtitle{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .hero-section .cover{
+        height: 240px;
+        background-size: cover;
+        border-radius: 0px;
+    }
+}
+
+/* Sunday Service List */
+
+.sunday-service-list{
+    display: flex;
+    padding: 16px 80px 0px;
+    margin: 0 auto 64px;
+    flex-direction: column;
+    gap: 48px;
+    border-top: 1px solid var(--black-20, rgba(0, 0, 0, 0.20));
+    max-width: 1366px;
+}
+
+.sunday-service-list .service{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.sunday-service-list .service .cover{
+    height: 400px;
+    width: 50%;
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sunday-service-list .service .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    flex: 1 0 0;
+}
+
+.sunday-service-list .service .text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.sunday-service-list .service .text-box .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    font-family: "Noto Sans TC";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+}
+
+.sunday-service-list .service .text-box .description{
+    align-self: stretch;
+    color: var(--black-80, rgba(0, 0, 0, 0.50));
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+.sunday-service-list .service .btn-list{
+    display: flex;
+    gap: 16px;
+}
+
+.sunday-service-list .service .btn.major{
+    display: flex;
+    padding: 12px 12px 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--main, #F2C700);
+}
+
+.sunday-service-list .service .btn.major .btn-text{
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sunday-service-list .service .btn.major .btn-icon{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/image/arrow-right.png);
+    background-size: contain;
+}
+
+.sunday-service-list .service .btn.major:hover{
+    cursor: pointer;
+    background: var(--main-dark-5, #302800);
+
+    .btn-icon{
+        background-image: url(../element/image/arrow-right-hover.png);
+    }
+
+    .btn-text{
+        color: var(--main, #F2C700);
+    }
+}
+
+.sunday-service-list .service .btn.outline{
+    display: flex;
+    padding: 12px 24px 12px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1.5px solid var(--black, #000);
+}
+
+.sunday-service-list .service .btn.outline .btn-text{
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sunday-service-list .service .btn.outline .btn-icon{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/icons/broadcast.png);
+    background-size: contain;
+}
+
+.sunday-service-list .service .btn.outline:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.90);
+
+    .btn-icon{
+        background-image: url(../element/icons/broadcast-hover.png);
+    }
+
+    .btn-text{
+        color: white;
+    }
+}
+
+.sunday-service-list .service.adult .cover{
+    background-image: url(../element/image/sunday-service-adult.png);
+}
+
+.sunday-service-list .service.teens .cover{
+    background-image: url(../element/image/sunday-service-teens.png);
+}
+
+.sunday-service-list .service.kids .cover{
+    background-image: url(../element/image/sunday-service-kids.png);
+}
+
+@media (max-width:1366px) {
+    .sunday-service-list{
+        padding: 16px 48px 0px;
+        margin: 0 auto 64px;
+        gap: 24px;
+        border-top: 1px solid var(--black-20, rgba(0, 0, 0, 0.20));
+    }
+    .sunday-service-list .service{
+        gap: 48px;
+    }
+    .sunday-service-list .service .cover{
+        height: 360px;
+        width: 50%;
+        border-radius: 4px;
+    }
+    .sunday-service-list .service .details{
+        gap: 48px;
+    }
+    .sunday-service-list .service .text-box .title{
+        font-size: 36px;
+        font-weight: 400;
+    }
+    
+    .sunday-service-list .service .text-box .description{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+@media (max-width:1024px) {
+    .sunday-service-list{
+        padding: 16px 24px 0px;
+        margin: 0 auto 48px;
+        gap: 24px;
+        border-top: 1px solid var(--black-20, rgba(0, 0, 0, 0.20));
+    }
+    .sunday-service-list .service{
+        gap: 24px;
+    }
+    .sunday-service-list .service .cover{
+        height: 280px;
+        width: 50%;
+        border-radius: 4px;
+    }
+    .sunday-service-list .service .details{
+        gap: 48px;
+    }
+    .sunday-service-list .service .text-box .title{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    
+    .sunday-service-list .service .text-box .description{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+@media (max-width:768px) {
+    .sunday-service-list{
+        padding: 32px 32px 0px;
+        margin: 0 auto 24px;
+        gap: 24px;
+        border-top: 1px solid var(--black-20, rgba(0, 0, 0, 0.20));
+    }
+    .sunday-service-list .service{
+        gap: 16px;
+        flex-direction: column;
+    }
+    .sunday-service-list .service .cover{
+        height: 360px;
+        width: 100%;
+        border-radius: 4px;
+    }
+    .sunday-service-list .service .details{
+        gap: 16px;
+    }
+    .sunday-service-list .service .text-box{
+        gap: 16px;
+    }
+    .sunday-service-list .service .text-box .title{
+        font-size: 28px;
+        font-weight: 400;
+    }
+    
+    .sunday-service-list .service .text-box .description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .sunday-service-list .service .btn-list{
+        gap: 2%;
+    }
+    .sunday-service-list .service .btn.major{
+        flex:1 0 0;
+    }
+    .sunday-service-list .service .btn.outline{
+        flex:1 0 0;
+    }
+}
+@media (max-width:414px) {
+    .sunday-service-list{
+        padding: 24px 24px 0px;
+        margin: 0 auto 24px;
+        gap: 24px;
+        border-top: 1px solid var(--black-20, rgba(0, 0, 0, 0.20));
+    }
+    .sunday-service-list .service{
+        gap: 16px;
+        flex-direction: column;
+    }
+    .sunday-service-list .service .cover{
+        height: 200px;
+        width: 100%;
+        border-radius: 4px;
+    }
+    .sunday-service-list .service .details{
+        gap: 16px;
+    }
+    .sunday-service-list .service .text-box .title{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .sunday-service-list .service .text-box .description{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

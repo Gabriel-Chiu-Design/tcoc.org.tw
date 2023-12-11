@@ -1,0 +1,784 @@
+/* Conviction Section*/
+
+.conviction-section{
+    display: flex;
+    max-width: 1366px;
+    margin: 144px auto 48px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.conviction-section .section-title-box{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.conviction-section .section-title-box .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.conviction-section .section-title-box .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.conviction-section .concept-list{
+    display: flex;
+    padding: 48px 48px 0px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conviction-section .concept-list .concept{
+    display: flex;
+    gap: 48px;
+    align-self: stretch;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 12px;
+}
+
+.conviction-section .concept-list .concept .cover{
+    display: flex;
+    height: 360px;
+    flex:1 0 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 4px;
+    position: relative;
+}
+
+.conviction-section .concept-list .concept .cover .chip{
+    /*layout*/
+    display: flex;
+    padding: 2px 6px;
+    justify-content: center;
+    align-items: center;
+
+    /*position*/
+    position: absolute;
+    left: 8px;
+    top: 8px;
+
+    /*style*/
+    border-radius: 56px;
+    background: var(--main, #F2C700);
+    color: var(--black, #000);
+
+    /* Text-5 */
+    font-family: "Noto Sans TC";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 120% */
+    letter-spacing: 0.1px;
+}
+
+.conviction-section .concept-list .concept .text{
+    display: flex;
+    flex-direction: column;
+    flex:1 0 0;
+}
+
+.conviction-section .concept-list .concept .text .title{
+    align-self: stretch;
+    color: var(--Black, #1A1A1A);
+    font-family: "Noto Sans TC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.conviction-section .concept-list .concept .text .subtitle{
+    align-self: stretch;
+    color: var(--black-60, rgba(0, 0, 0, 0.50));
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+    margin-top: 12px;
+}
+
+.conviction-section .concept-list .concept .text .bible-verse{
+    align-self: stretch;
+    color: var(--black-60, rgba(0, 0, 0, 0.80));
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+    margin-top: 24px;
+}
+
+.conviction-section .concept-list .concept .text .scripture{
+    align-self: stretch;
+    color: var(--black-60, rgba(0, 0, 0, 0.80));
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+    margin-top: 8px;
+}
+
+.conviction-section .concept-list .concept-1 .cover{
+    background-image: url(../element/image/counselling-concept-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conviction-section .concept-list .concept-2 .cover{
+    background-image: url(../element/image/counselling-concept-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conviction-section .concept-list .concept-3 .cover{
+    background-image: url(../element/image/counselling-concept-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conviction-section .concept-list .concept-4 .cover{
+    background-image: url(../element/image/counselling-concept-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conviction-section .concept-list .concept-5 .cover{
+    background-image: url(../element/image/counselling-concept-5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conviction-section .more{
+    display: flex;
+    padding-top: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.conviction-section .more .caption{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+
+.conviction-section .more .btn{
+    display: flex;
+    padding: 12px 12px 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--main, #F2C700);
+}
+
+.conviction-section .more .btn .btn-text{
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.conviction-section .more .btn .btn-icon-r{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/image/arrow-right.png);
+    background-size: contain;
+}
+
+.conviction-section .more .btn:hover{
+    background: var(--main-dark-5, #302800);
+    cursor: pointer;
+
+    .btn-text{
+        color: var(--main, #F2C700);
+    }
+    .btn-icon-r{
+        background-image: url(../element/image/arrow-right-hover.png);
+    }
+}
+
+@media(max-width:1366px){
+    .conviction-section{
+        margin: 120px auto 48px;
+        gap: 48px;
+        padding: 0 48px;
+    }
+    .conviction-section .section-title-box .title{
+        font-size: 36px;
+    }
+    .conviction-section .section-title-box .subtitle{
+        font-size: 18px;
+    }
+    .conviction-section .concept-list{
+        padding: 0px;
+        gap: 40px;
+    }
+    .conviction-section .concept-list .concept{
+        gap: 48px;
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
+        padding-bottom: 12px;
+    }
+    .conviction-section .concept-list .concept .cover{
+        height: 320px;
+        gap: 10px;
+        border-radius: 4px;
+    }
+    .conviction-section .concept-list .concept .cover .chip{
+        /*layout*/
+        padding: 2px 6px;
+        /*position*/
+        left: 8px;
+        top: 8px;
+        /*style*/
+        border-radius: 56px;
+        /* Text-5 */
+        font-size: 10px;
+    }
+    .conviction-section .concept-list .concept .text .title{
+        font-size: 28px;
+    }
+    .conviction-section .concept-list .concept .text .bible-verse{
+        font-size: 18px;
+        margin-top: 24px;
+    }
+    .conviction-section .concept-list .concept .text .scripture{
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    .conviction-section .concept-list .concept .text .subtitle{
+        font-size: 18px;
+        margin-top: 12px;
+    }
+    .conviction-section .more{
+        padding-top: 0px;
+        gap: 8px;
+    }
+    .conviction-section .more .caption{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1024px){
+    .conviction-section{
+        margin: 120px auto 48px;
+        gap: 24px;
+        padding: 0 16px;
+    }
+    .conviction-section .section-title-box .title{
+        font-size: 32px;
+    }
+    .conviction-section .section-title-box .subtitle{
+        font-size: 18px;
+    }
+    .conviction-section .concept-list{
+        padding: 0px;
+        gap: 40px;
+    }
+    .conviction-section .concept-list .concept{
+        gap: 48px;
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
+        padding-bottom: 12px;
+    }
+    .conviction-section .concept-list .concept .cover{
+        height: 240px;
+        gap: 10px;
+        border-radius: 4px;
+    }
+    .conviction-section .concept-list .concept .cover .chip{
+        /*layout*/
+        padding: 2px 6px;
+        /*position*/
+        left: 8px;
+        top: 8px;
+        /*style*/
+        border-radius: 56px;
+        /* Text-5 */
+        font-size: 10px;
+    }
+    .conviction-section .concept-list .concept .text .title{
+        font-size: 24px;
+    }
+    .conviction-section .concept-list .concept .text .bible-verse{
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    .conviction-section .concept-list .concept .text .scripture{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .conviction-section .concept-list .concept .text .subtitle{
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    .conviction-section .more{
+        padding-top: 0px;
+        gap: 8px;
+    }
+    .conviction-section .more .caption{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:768px){
+    .conviction-section{
+        margin: 96px auto 48px;
+        gap: 24px;
+        padding: 0 16px;
+    }
+    .conviction-section .section-title-box .title{
+        font-size: 28px;
+    }
+    .conviction-section .section-title-box .subtitle{
+        font-size: 18px;
+    }
+    .conviction-section .concept-list{
+        padding: 0px 24px;
+        gap: 24px;
+    }
+    .conviction-section .concept-list .concept{
+        gap: 12px;
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
+        padding-bottom: 12px;
+        flex-direction: column;
+    }
+    .conviction-section .concept-list .concept .cover{
+        height: 240px;
+        flex: none;
+        gap: 10px;
+        border-radius: 4px;
+    }
+    .conviction-section .concept-list .concept .cover .chip{
+        /*layout*/
+        padding: 2px 6px;
+        /*position*/
+        left: 8px;
+        top: 8px;
+        /*style*/
+        border-radius: 56px;
+        /* Text-5 */
+        font-size: 10px;
+    }
+    .conviction-section .concept-list .concept .text .title{
+        font-size: 24px;
+    }
+    .conviction-section .concept-list .concept .text .subtitle{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .conviction-section .concept-list .concept .text .bible-verse{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .conviction-section .concept-list .concept .text .scripture{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .conviction-section .more{
+        padding-top: 0px;
+        gap: 8px;
+    }
+    .conviction-section .more .caption{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:414px){
+    .conviction-section{
+        margin: 96px auto 48px;
+        gap: 24px;
+        padding: 0 16px;
+    }
+    .conviction-section .section-title-box .title{
+        font-size: 24px;
+    }
+    .conviction-section .section-title-box .subtitle{
+        font-size: 16px;
+    }
+    .conviction-section .concept-list{
+        padding: 0px;
+        gap: 24px;
+    }
+    .conviction-section .concept-list .concept{
+        gap: 12px;
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
+        padding-bottom: 12px;
+        flex-direction: column;
+    }
+    .conviction-section .concept-list .concept .cover{
+        height: 200px;
+        flex: none;
+        border-radius: 4px;
+    }
+    .conviction-section .concept-list .concept .text .title{
+        font-size: 20px;
+    }
+    .conviction-section .concept-list .concept .text .subtitle{
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    .conviction-section .concept-list .concept .text .bible-verse{
+        font-size: 14px;
+        margin-top: 16px;
+    }
+    .conviction-section .concept-list .concept .text .scripture{
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .conviction-section .more{
+        padding-top: 0px;
+        gap: 8px;
+    }
+    .conviction-section .more .caption{
+        font-size: 16px;
+    }
+}
+
+/*Sharing Section Css*/
+
+.sharing-section{
+    display: flex;
+    padding: 24px 0px 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 64px;
+    background: var(--main-light-1, #FEF9E6);
+}
+
+.sharing-section .section-title-box{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.sharing-section .section-title-box .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sharing-section .section-title-box .subtitle{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    font-family: "Noto Sans TC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sharing-section .comment{
+    display: flex;
+    padding: 24px 48px;
+    margin: 0 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--black-40, rgba(0, 0, 0, 0.40));
+}
+
+.sharing-section .comment .author{
+    display: flex;
+    padding-top: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.sharing-section .comment .author .icon{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    background-size: cover;
+}
+
+.sharing-section .comment .author .icon{
+    background-image: url(../element/icons/sharer.svg);
+}
+
+.sharing-section .comment .author .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.sharing-section .comment .author .details .name{
+    align-self: stretch;
+    color: var(--cool-gray-90, #21272A);
+    text-align: center;
+    
+    /* Heading/4 */
+    font-family: "Noto Sans TC";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 26.4px */
+}
+
+.sharing-section .comment .author .details .tag{
+    align-self: stretch;
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    text-align: center;
+    
+    /* Body/L */
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+}
+
+.sharing-section .comment .sharing{
+    align-self: stretch;
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
+    text-align: center;
+    
+    /* Body/L */
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+}
+
+.sharing-section .swiper{
+    max-width: 1366px;
+    overflow: hidden;
+    padding: 0 48px 48px;
+    width: 100%;
+}
+
+.sharing-section .swiper-pagination-bullet{
+    background-color: #302800;
+}
+
+.swiper-button-prev{
+    color:#302800 !important;
+    height: 48px !important;
+    width: 48px !important; 
+    top: 45% !important;
+}
+
+.swiper-button-next{
+    color:#302800 !important;
+    height: 48px !important;
+    width: 48px !important; 
+    top: 45% !important;
+}
+
+@media (max-width:1366px) {
+    .sharing-section{
+        padding: 24px 0px 48px;
+        gap: 24px;
+        margin-bottom: 64px;
+    }
+    .sharing-section .section-title-box .title{
+        font-size: 36px;
+    }
+    .sharing-section .section-title-box .subtitle{
+        font-size: 20px;
+    }
+    .sharing-section .comment{
+        padding: 24px 36px;
+        margin: 0px 24px;
+        gap: 16px;
+        border-radius: 12px;
+        border: 1px solid var(--black-40, rgba(0, 0, 0, 0.40));
+    }
+    .sharing-section .comment .author{
+        padding-top: 0px;
+        gap: 16px;
+    }
+    .sharing-section .comment .author .icon{
+        width: 48px;
+        height: 48px;
+    }
+    .sharing-section .comment .author .details{
+        gap: 4px;
+    }  
+    .sharing-section .comment .author .details .name{
+        font-size: 20px;
+    }
+    .sharing-section .comment .author .details .tag{
+        font-size: 18px;
+    }
+    .sharing-section .comment .sharing{
+        font-size: 18px;
+    }
+}
+@media (max-width:1024px) {
+    .sharing-section{
+        padding: 24px 0px 24px;
+        gap: 24px;
+        margin-bottom: 64px;
+    }
+    .sharing-section .section-title-box .title{
+        font-size: 32px;
+    }
+    .sharing-section .section-title-box .subtitle{
+        font-size: 18px;
+    }
+    .sharing-section .comment{
+        padding: 48px 36px;
+        margin: 0px 120px;
+        gap: 24px;
+        border-radius: 12px;
+        border: 1px solid var(--black-40, rgba(0, 0, 0, 0.40));
+    }
+    .sharing-section .comment .author{
+        padding-top: 0px;
+        gap: 16px;
+    }
+    .sharing-section .comment .author .icon{
+        width: 48px;
+        height: 48px;
+    }
+    .sharing-section .comment .author .details{
+        gap: 4px;
+    }  
+    .sharing-section .comment .author .details .name{
+        font-size: 20px;
+    }
+    .sharing-section .comment .author .details .tag{
+        font-size: 18px;
+    }
+    .sharing-section .comment .sharing{
+        font-size: 18px;
+    }
+    .sharing-section .swiper{
+        padding: 0 0px 48px;
+    }
+}
+@media (max-width:768px) {
+    .sharing-section{
+        padding: 24px 16px 24px;
+        gap: 24px;
+        margin-bottom: 64px;
+    }
+    .sharing-section .section-title-box .title{
+        font-size: 28px;
+    }
+    .sharing-section .section-title-box .subtitle{
+        font-size: 16px;
+    }
+    .sharing-section .comment{
+        padding: 24px 36px;
+        margin: 0px 24px;
+        gap: 24px;
+        border-radius: 12px;
+        border: 1px solid var(--black-40, rgba(0, 0, 0, 0.40));
+    }
+    .sharing-section .comment .author{
+        padding-top: 0px;
+        gap: 16px;
+    }
+    .sharing-section .comment .author .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .sharing-section .comment .author .details{
+        gap: 4px;
+    }  
+    .sharing-section .comment .author .details .name{
+        font-size: 20px;
+    }
+    .sharing-section .comment .author .details .tag{
+        font-size: 18px;
+    }
+    .sharing-section .comment .sharing{
+        font-size: 18px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: none !important;
+    }
+    .sharing-section .swiper{
+        padding: 0 0px 36px;
+    }
+}
+@media (max-width:414px) {
+    .sharing-section{
+        padding: 24px 0px 24px;
+        gap: 12px;
+        margin-bottom: 48px;
+    }
+    .sharing-section .section-title-box .title{
+        font-size: 24px;
+    }
+    .sharing-section .comment{
+        padding: 16px 24px;
+        margin: 0px 12px;
+        gap: 12px;
+        border-radius: 8px;
+        border: 1px solid var(--black-40, rgba(0, 0, 0, 0.40));
+    }
+    .sharing-section .comment .author{
+        padding-top: 0px;
+        gap: 16px;
+        flex-direction: row;
+    }
+    .sharing-section .comment .author .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .sharing-section .comment .author .details{
+        gap: 4px;
+    }  
+    .sharing-section .comment .author .details .name{
+        font-size: 16px;
+    }
+    .sharing-section .comment .author .details .tag{
+        font-size: 14px;
+        text-align: start;
+    }
+    .sharing-section .comment .sharing{
+        font-size: 14px;
+        text-align: start;
+    }
+    .sharing-section .swiper{
+        padding: 0 0px 36px;
+    }
+}

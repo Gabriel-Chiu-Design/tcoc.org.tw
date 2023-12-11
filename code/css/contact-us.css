@@ -1,0 +1,643 @@
+/* Contact Form Section*/
+
+.contact-form-section{
+    display: flex;
+    align-items: center;
+    gap: 92px;
+    margin: 144px auto 80px;
+    padding: 0 80px;
+    max-width: 1366px;
+}
+
+.contact-form-section .join-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 540px;
+    background-image: url(../element/image/join-us-bg-01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contact-form-section .contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 58%;
+}
+
+.contact-form-section .contact-form .title{
+    align-self: stretch;
+    color: var(--black, #000);
+    font-family: 'Noto Sans TC';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 52.8px */
+}
+
+.contact-form-section .input-form{
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.contact-form-section .input-form .label{
+    align-self: stretch;
+    color: var(--black, #000);
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+.contact-form-section .input-form .name,
+.contact-form-section .input-form .region,
+.contact-form-section .input-form .demographics,
+.contact-form-section .input-form .gender,
+.contact-form-section .input-form .phone,
+.contact-form-section .input-form .line-id{
+    width: 48.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.contact-form-section .input-form .interest,
+.contact-form-section .input-form .comments{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.contact-form-section .input-form .region .placeholder,
+.contact-form-section .input-form .gender .placeholder,
+.contact-form-section .input-form .demographics .placeholder
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 4px;
+
+    flex: 1 0 0;
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-weight: 300;
+    padding: 16px 12px 16px 16px;
+
+    background-color: var(--black-8, rgba(0, 0, 0, 0.05));
+    background-image: url(../element/image/dropdown-icon.png);
+    background-size: 24px 24px;
+    background-position: right 5% center;
+    background-repeat: no-repeat;
+}
+
+.contact-form-section .input-form .region .placeholder:hover,
+.contact-form-section .input-form .gender .placeholder:hover,
+.contact-form-section .input-form .demographics .placeholder:hover
+{
+    cursor: pointer;
+}
+
+.contact-form-section .input-form .name .placeholder{
+    display: flex;
+    padding: 16px 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: var(--black-8, rgba(0, 0, 0, 0.05));
+
+    /* Body/M */
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+.contact-form-section .input-form .checkbox{
+    width: 23.9%;
+}
+
+.contact-form-section .input-form .phone .input-box,
+.contact-form-section .input-form .line-id .input-box{
+    display: flex;
+    height: 48px;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border:none;
+    background: var(--black-8, rgba(0, 0, 0, 0.05));
+    border-radius: 4px;
+
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    /* Body/M */
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+.contact-form-section .input-form .phone .placeholder,
+.contact-form-section .input-form .line-id .placeholder{
+    flex: 1 0 0;
+    background-color: transparent;
+    height: 100%;
+    /* Body/M */
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+
+.checkbox-list{
+    display: flex;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.contact-form-section .input-form .interest .placeholder{
+    display: flex;
+    padding: 12px 24px 12px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 4px;
+    background: var(--black-8, rgba(0, 0, 0, 0.05));
+
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+}
+
+.contact-form-section .input-form .interest .placeholder:hover{
+    cursor: pointer;
+}
+
+input:focus, select:focus, textarea:focus, .checkbox:focus{
+    outline: 2px solid #F2C700;
+}
+
+INPUT[type=checkbox]
+{
+    background-image: url(../element/image/checkbox-default.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+INPUT[type=checkbox]:checked{
+    background-image: url(../element/image/checkbox-checked.png);
+    background-size: contain;
+    border: none;
+}
+
+.contact-form-section .input-form .comments .placeholder{
+    display: flex;
+    height: 240px;
+    padding: 14px 16px;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 4px;
+    border:none;
+    background: var(--black-8, rgba(0, 0, 0, 0.05));
+
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;  
+}
+
+.contact-form-section .input-form input[type=submit]{
+    display: flex;
+    padding: 12px 46px 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: var(--main, #F2C700);
+    background-image: url(../element/image/arrow-right.png);
+    background-position: right 12px center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+
+    color: var(--black, #000);
+    text-align: center;
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact-form-section .input-form input[type=submit]:hover{
+    background-color: var(--main, #302800);
+    color: #F2C700;
+    background-image: url(../element/image/arrow-right-hover.png);
+    cursor: pointer;
+}
+
+@media (max-width:1366px) {
+    .contact-form-section{
+        gap: 48px;
+        margin: 144px auto 80px;
+        padding: 0px 48px;
+    }
+    .contact-form-section .join-us{
+        width: 45%;
+        height: 540px;
+    }
+    .contact-form-section .contact-form{
+        gap: 24px;
+        width: 55%;
+    }
+    .contact-form-section .contact-form .title{
+        font-size: 36px;
+    }
+    .contact-form-section .input-form{
+        width: 100%;
+        gap: 16px;
+    }
+    .contact-form-section .input-form .label{
+        font-size: 16px;
+    }
+    .contact-form-section .input-form .name,
+    .contact-form-section .input-form .region,
+    .contact-form-section .input-form .demographics,
+    .contact-form-section .input-form .gender,
+    .contact-form-section .input-form .phone,
+    .contact-form-section .input-form .line-id{
+        width: 48%;
+        gap: 8px;
+    }
+    .contact-form-section .input-form .interest,
+    .contact-form-section .input-form .comments{
+        width: 100%;
+        gap: 8px;
+    }
+    .contact-form-section .input-form .region .placeholder,
+    .contact-form-section .input-form .gender .placeholder,
+    .contact-form-section .input-form .demographics .placeholder
+    {
+        border-radius: 4px;
+
+        flex: 1 0 0;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 16px 12px 16px 16px;
+
+        background-size: 24px 24px;
+        background-position: right 5% center;
+    }
+    .contact-form-section .input-form .name .placeholder{
+        padding: 16px 16px;
+        gap: 8px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .contact-form-section .input-form .checkbox{
+        width: 48.5%;
+    }
+    .contact-form-section .input-form .phone .input-box,
+    .contact-form-section .input-form .line-id .input-box{
+        height: 48px;
+        padding: 12px 16px;
+        gap: 8px;
+        border-bottom: 1px solid var(--black-20, rgba(0, 0, 0, 0.20));
+        border-radius: 4px;
+        color: var(--black-40, rgba(0, 0, 0, 0.40));
+        font-size: 16px;
+    }
+    .contact-form-section .input-form .phone .placeholder,
+    .contact-form-section .input-form .line-id .placeholder{
+        height: 100%;
+        font-size: 16px;
+    }
+    .checkbox-list{
+        gap: 8px;
+    }
+    .contact-form-section .input-form .interest .placeholder{
+        padding: 12px 24px 12px 12px;
+        gap: 10px;
+        flex: 1 0 0;
+        border-radius: 4px;
+        background: var(--black-8, rgba(0, 0, 0, 0.05));
+        font-size: 16px;
+    }
+    INPUT[type=checkbox]
+    {
+        width: 24px;
+        height: 24px;
+    }
+    .contact-form-section .input-form .comments .placeholder{
+        height: 240px;
+        padding: 14px 16px;
+        gap: 8px;
+        border-radius: 4px;
+        border-bottom: 1px solid var(--black-20, rgba(0, 0, 0, 0.10));
+        background: var(--black-8, rgba(0, 0, 0, 0.05));
+        font-size: 16px;
+    }
+    .contact-form-section .input-form input[type=submit]{
+        padding: 12px 46px 12px 24px;
+        gap: 10px;
+        border-radius: 4px;
+        background-position: right 12px center;
+        background-size: 24px 24px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1024px) {
+    .contact-form-section{
+        gap: 0px;
+        margin: 0px auto 80px;
+        padding: 0px 24px;
+        flex-direction: column;
+    }
+    .contact-form-section .join-us{
+        width: 45%;
+        height: 360px;
+        margin-right: 120px;
+        background-image: url(../element/image/join-us-bg-02.png);
+    }
+    .contact-form-section .contact-form{
+        gap: 24px;
+        width: 100%;
+    }
+    .contact-form-section .contact-form .title{
+        display: none;
+    }
+    .contact-form-section .input-form{
+        width: 100%;
+        gap: 16px;
+        justify-content: center;
+    }
+    .contact-form-section .input-form .label{
+        font-size: 16px;
+    }
+    .contact-form-section .input-form .name,
+    .contact-form-section .input-form .region,
+    .contact-form-section .input-form .demographics,
+    .contact-form-section .input-form .gender,
+    .contact-form-section .input-form .phone,
+    .contact-form-section .input-form .line-id{
+        width: 48.5%;
+        gap: 8px;
+    }
+    .contact-form-section .input-form .interest,
+    .contact-form-section .input-form .comments{
+        width: 100%;
+        gap: 8px;
+    }
+    .contact-form-section .input-form .region .placeholder,
+    .contact-form-section .input-form .gender .placeholder,
+    .contact-form-section .input-form .demographics .placeholder
+    {
+        border-radius: 4px;
+
+        flex: 1 0 0;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 16px 12px 16px 16px;
+        background-size: 24px 24px;
+        background-position: right 5% center;
+    }
+    .contact-form-section .input-form .name .placeholder{
+        padding: 16px 16px;
+        gap: 8px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .contact-form-section .input-form .checkbox{
+        width: 24%;
+    }
+    .contact-form-section .input-form .phone .input-box,
+    .contact-form-section .input-form .line-id .input-box{
+        height: 48px;
+        padding: 12px 16px;
+        gap: 8px;
+        border-bottom: 1px solid var(--black-20, rgba(0, 0, 0, 0.20));
+        border-radius: 4px;
+        color: var(--black-40, rgba(0, 0, 0, 0.40));
+        font-size: 16px;
+    }
+    .contact-form-section .input-form .phone .placeholder,
+    .contact-form-section .input-form .line-id .placeholder{
+        height: 100%;
+        font-size: 16px;
+    }
+    .checkbox-list{
+        gap: 8px;
+    }
+    .contact-form-section .input-form .interest .placeholder{
+        padding: 12px 24px 12px 12px;
+        gap: 10px;
+        flex: 1 0 0;
+        border-radius: 4px;
+        background: var(--black-8, rgba(0, 0, 0, 0.05));
+        font-size: 16px;
+        justify-content: start;
+    }
+    INPUT[type=checkbox]
+    {
+        width: 24px;
+        height: 24px;
+    }
+    .contact-form-section .input-form .comments .placeholder{
+        height: 240px;
+        padding: 14px 16px;
+        gap: 8px;
+        border-radius: 4px;
+        border-bottom: 1px solid var(--black-20, rgba(0, 0, 0, 0.10));
+        background: var(--black-8, rgba(0, 0, 0, 0.05));
+        font-size: 16px;
+    }
+    .contact-form-section .input-form input[type=submit]{
+        padding: 12px 80px 12px 64px;
+        gap: 10px;
+        border-radius: 4px;
+        background-position: right 48px center;
+        background-size: 24px 24px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:768px) {
+    .contact-form-section{
+        gap: 48px;
+        margin: 96px auto 80px;
+        padding: 0px 16px;
+        flex-direction: column;
+    }
+    .contact-form-section .join-us{
+        width: 35%;
+        height: 80px;
+        margin-right: 0px;
+        background-image: url(../element/image/join-us-bg-03.png);
+    }
+    .contact-form-section .contact-form{
+        gap: 24px;
+        width: 100%;
+    }
+    .contact-form-section .contact-form .title{
+        display: none;
+    }
+    .contact-form-section .input-form{
+        width: 100%;
+        gap: 2%;
+    }
+    .contact-form-section .input-form .label{
+        font-size: 16px;
+    }
+    .contact-form-section .input-form .name,
+    .contact-form-section .input-form .region,
+    .contact-form-section .input-form .demographics,
+    .contact-form-section .input-form .gender,
+    .contact-form-section .input-form .phone,
+    .contact-form-section .input-form .line-id{
+        width: 49%;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+    .contact-form-section .input-form .interest,
+    .contact-form-section .input-form .comments{
+        width: 100%;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+    .contact-form-section .input-form .name .placeholder{
+        padding: 16px 16px;
+        gap: 8px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .contact-form-section .input-form .checkbox{
+        width: 49%;
+    }
+    .contact-form-section .input-form .phone .input-box,
+    .contact-form-section .input-form .line-id .input-box{
+        height: 48px;
+        padding: 12px 16px;
+        gap: 8px;
+        border-bottom: 1px solid var(--black-20, rgba(0, 0, 0, 0.20));
+        border-radius: 4px;
+        color: var(--black-40, rgba(0, 0, 0, 0.40));
+        font-size: 16px;
+    }
+    .contact-form-section .input-form .phone .placeholder,
+    .contact-form-section .input-form .line-id .placeholder{
+        height: 100%;
+        font-size: 16px;
+    }
+    .checkbox-list{
+        gap: 8px;
+    }
+    INPUT[type=checkbox]
+    {
+        width: 24px;
+        height: 24px;
+    }
+    .contact-form-section .input-form .comments .placeholder{
+        height: 240px;
+        padding: 14px 16px;
+        gap: 8px;
+        border-radius: 4px;
+        border-bottom: 1px solid var(--black-20, rgba(0, 0, 0, 0.10));
+        background: var(--black-8, rgba(0, 0, 0, 0.05));
+        font-size: 16px;
+    }
+}
+
+@media (max-width:414px){
+    .contact-form-section{
+        gap: 12px;
+        margin: 72px auto 80px;
+    }
+    .contact-form-section .join-us{
+        width: 35%;
+        height: 80px;
+        margin-right: 0px;
+        background-image: url(../element/image/join-us-bg-03.png);
+    }
+    .contact-form-section .contact-form{
+        gap: 24px;
+        width: 100%;
+    }
+    .contact-form-section .contact-form .title{
+        display: none;
+    }
+    .contact-form-section .input-form{
+        width: 100%;
+        gap: 2%;
+    }
+    .contact-form-section .input-form .label{
+        font-size: 14px;
+    }
+    .contact-form-section .input-form .name,
+    .contact-form-section .input-form .region,
+    .contact-form-section .input-form .demographics,
+    .contact-form-section .input-form .gender,
+    .contact-form-section .input-form .phone,
+    .contact-form-section .input-form .line-id{
+        width: 100%;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+    .contact-form-section .input-form .region .placeholder,
+    .contact-form-section .input-form .gender .placeholder,
+    .contact-form-section .input-form .demographics .placeholder
+    {
+        font-size: 14px;
+        padding: 16px 12px 16px 16px;
+    }
+    .contact-form-section .input-form .phone .placeholder,
+    .contact-form-section .input-form .line-id .placeholder{
+        height: 100%;
+        font-size: 14px;
+    }
+    .contact-form-section .input-form .checkbox{
+        width: 48.5%;
+    }
+    .contact-form-section .input-form .interest .placeholder{
+        padding: 12px 24px 12px 12px;
+        gap: 10px;
+        flex: 1 0 0;
+        border-radius: 4px;
+        background: var(--black-8, rgba(0, 0, 0, 0.05));
+        font-size: 14px;
+    }
+    .contact-form-section .input-form .comments .placeholder{
+        height: 240px;
+        padding: 14px 16px;
+        gap: 8px;
+        border-radius: 4px;
+        border-bottom: 1px solid var(--black-20, rgba(0, 0, 0, 0.10));
+        background: var(--black-8, rgba(0, 0, 0, 0.05));
+        font-size: 14px;
+    }
+}
