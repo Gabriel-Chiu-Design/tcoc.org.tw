@@ -11,8 +11,8 @@ $(document).ready(function () {
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
 
         /*log response*/
-        .then(response => { alert('Success!', response) })
-        .catch(error => { alert('Error!', error.message) })
+        .then(response => { alert('發送成功! 稍後將會有專人跟您聯繫，感謝!', response) })
+        .catch(error => { alert('不好意思，表單填寫失敗，請重新填寫。', error.message) })
     })
     
 });
