@@ -154,13 +154,23 @@
     }
 }
 
+/*------------------------  Ministry Cover Css --------------------------*/
+
+.ministry-cover{
+    margin: 200px 80px 0px;
+    max-width: 1366px;
+    width: 100%;
+    height: 600px;
+    border-radius: 16px;
+    background: center center/ cover no-repeat url(../element/image/大學團契/hero-banner.jpg);
+}
+
 /*------------------------  Ministry hero section Css --------------------------*/
 
 .hero-section{
     display: flex;
     max-width: 1366px;
-    width: 100%;
-    padding: 200px 80px 0px;
+    padding: 0px 80px 0px;
     align-items: center;
     gap: 48px;
 }
@@ -168,7 +178,7 @@
 .hero-section .cover{
     flex: 1 0 0;
     height: 400px;
-    background-image: url(../element/image/樂齡團契/樂齡出遊02.jpg);
+    background-image: url(../element/image/elderly-hero-cover.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -219,7 +229,7 @@
 
     /* Body/L */
     font-family: "Noto Sans TC";
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -397,7 +407,7 @@
     margin-bottom: 2%;
 }
 
-.event .event-grid .event-box{
+.event .event-grid .event-box:hover{
     padding: 16px;
     transition: ease-out 500ms;
     cursor: pointer;
@@ -418,25 +428,42 @@
     gap: 10px;
     align-self: stretch;
     height: 360px;
-    background-size: cover;
-    border-radius: 8px;
-    background-position: center center;
 }
 
 .event-box.event-1 .cover{
-    background-image: url(../element/image/樂齡團契/樂齡出遊01.jpg);
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
 }
 
 .event-box.event-2 .cover{
-    background-image: url(../element/image/樂齡團契/樂齡活動02.jpg);
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
 }
 
 .event-box.event-3 .cover{
-    background-image: url(../element/image/樂齡團契/樂齡聚會02.jpg);
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
 }
 
 .event-box.event-4 .cover{
-    background-image: url(../element/image/樂齡團契/探訪活動01.jpg);
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.event-box.event-5 .cover{
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.event-box.event-6 .cover{
+    background-image: url(../element/image/event-01.jpeg);
+    background-size: cover;
+    border-radius: 8px;
 }
 
 .event .event-grid .event-box .text{
@@ -460,12 +487,11 @@
     display: flex;
     justify-content: space-between;
     align-self: stretch;
-    gap: 48px;
 }
 
 .event .event-grid .event-box .text .details .caption{
     flex: 1 0 0;
-    color: var(--black-40, rgba(0, 0, 0, 0.70));
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
     font-family: "Noto Sans TC";
     font-size: 20px;
     font-style: normal;
