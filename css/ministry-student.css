@@ -394,7 +394,6 @@
 .event .event-grid{
     display: flex;
     gap: 2%;
-    justify-content: center;
     align-self: stretch;
     flex-wrap: wrap;
 }
@@ -407,9 +406,9 @@
     margin-bottom: 2%;
 }
 
-.event .event-grid .event-box:hover{
+.event .event-grid .event-box{
     padding: 16px;
-    transition: ease-out 500ms;
+    border: solid 4px transparent;
     cursor: pointer;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -422,48 +421,18 @@
     }
 }
 
+.event .event-grid .event-box:hover{
+    border: solid 4px #F2C700;
+}
+
 .event .event-grid .event-box .cover{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-self: stretch;
     height: 360px;
-}
-
-.event-box.event-1 .cover{
-    background-image: url(../element/image/event-01.jpeg);
-    background-size: cover;
     border-radius: 8px;
-}
-
-.event-box.event-2 .cover{
-    background-image: url(../element/image/event-01.jpeg);
-    background-size: cover;
-    border-radius: 8px;
-}
-
-.event-box.event-3 .cover{
-    background-image: url(../element/image/event-01.jpeg);
-    background-size: cover;
-    border-radius: 8px;
-}
-
-.event-box.event-4 .cover{
-    background-image: url(../element/image/event-01.jpeg);
-    background-size: cover;
-    border-radius: 8px;
-}
-
-.event-box.event-5 .cover{
-    background-image: url(../element/image/event-01.jpeg);
-    background-size: cover;
-    border-radius: 8px;
-}
-
-.event-box.event-6 .cover{
-    background-image: url(../element/image/event-01.jpeg);
-    background-size: cover;
-    border-radius: 8px;
+    object-fit: cover;
 }
 
 .event .event-grid .event-box .text{
@@ -487,11 +456,12 @@
     display: flex;
     justify-content: space-between;
     align-self: stretch;
+    gap: 48px;
 }
 
 .event .event-grid .event-box .text .details .caption{
     flex: 1 0 0;
-    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    color: var(--black-40, rgba(0, 0, 0, 0.70));
     font-family: "Noto Sans TC";
     font-size: 20px;
     font-style: normal;

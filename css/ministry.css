@@ -168,10 +168,9 @@
 .hero-section .cover{
     flex: 1 0 0;
     height: 400px;
-    background-image: url(../element/image/樂齡團契/樂齡出遊02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 8px;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .hero-section .text-box{
@@ -384,7 +383,6 @@
 .event .event-grid{
     display: flex;
     gap: 2%;
-    justify-content: center;
     align-self: stretch;
     flex-wrap: wrap;
 }
@@ -399,7 +397,7 @@
 
 .event .event-grid .event-box{
     padding: 16px;
-    transition: ease-out 500ms;
+    border: solid 4px transparent;
     cursor: pointer;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -412,31 +410,18 @@
     }
 }
 
+.event .event-grid .event-box:hover{
+    border: solid 4px #F2C700;
+}
+
 .event .event-grid .event-box .cover{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-self: stretch;
     height: 360px;
-    background-size: cover;
     border-radius: 8px;
-    background-position: center center;
-}
-
-.event-box.event-1 .cover{
-    background-image: url(../element/image/樂齡團契/樂齡出遊01.jpg);
-}
-
-.event-box.event-2 .cover{
-    background-image: url(../element/image/樂齡團契/樂齡活動02.jpg);
-}
-
-.event-box.event-3 .cover{
-    background-image: url(../element/image/樂齡團契/樂齡聚會02.jpg);
-}
-
-.event-box.event-4 .cover{
-    background-image: url(../element/image/樂齡團契/探訪活動01.jpg);
+    object-fit: cover;
 }
 
 .event .event-grid .event-box .text{
