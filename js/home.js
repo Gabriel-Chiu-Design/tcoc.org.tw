@@ -4,6 +4,7 @@ $(document).ready(function () {
         const coverswiper = new Swiper('.swiper', {
             direction: 'horizontal',
             speed: 400,
+            loop: true,
     
         // If we need pagination
         pagination: {

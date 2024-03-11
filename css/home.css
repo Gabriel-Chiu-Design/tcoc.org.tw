@@ -648,7 +648,14 @@
     flex-direction: column;
     align-items: center;
     align-self: stretch!important;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.25) 100%), url(../element/image/other-event-photo.jpg);
+}
+
+.other-event-section .slider.slider-1{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat url(../element/image/志工服務/picture-02.jpg);
+}
+
+.other-event-section .slider.slider-2{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat url(../element/image/志工服務/picture-05.jpg);
 }
 
 .other-event-section .slider .body{
@@ -713,6 +720,12 @@
     font-style: normal;
     font-weight: 300;
     line-height: 140%; /* 25.2px */
+
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .swiper-button-prev{
