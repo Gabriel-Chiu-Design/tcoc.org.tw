@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-self: stretch;
+    align-items: center;
 }
 
 .marriage-counselling-section .section-title-box .title{
@@ -36,9 +37,15 @@
     line-height: normal;
 }
 
+.marriage-counselling-section .section-title-box .logo{
+    width: 144px;
+    height: 144px;
+    margin: 24px;
+}
+
 .marriage-counselling-section .section-title-box .description{
     align-self: stretch;
-    padding: 24px 144px 0px;
+    padding: 0px 144px 0px;
     color: var(--black-80, rgba(0, 0, 0, 0.80));
     text-align: center;
     font-family: "Noto Sans TC";
