@@ -55,8 +55,6 @@
 .ministry-section .section-title{
     align-self: stretch;
     color: var(--Black, #1A1A1A);
-    text-align: center;
-    font-family: 'Noto Sans TC';
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
@@ -66,89 +64,47 @@
 .ministry-list{
     display: flex;
     justify-content: center;
-    gap: 16px;
+    column-gap: 2%;
+
     align-self: stretch;
     flex-wrap: wrap;
 }
 
 .ministry{
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 24%;
-    overflow: hidden;
+    align-items: center;
+    gap: 24px;
+    width: 49%;
+    padding: 16px;
+    margin-bottom: 2%;
+    border-radius: 8px;
+    background: var(--white, #FFF);
 }
 
 .ministry:hover{
     cursor: pointer;
 }
 
-.ministry .cover-1, .ministry .cover-2, .ministry .cover-3, .ministry .cover-4{
-    display: flex;
-    align-self: stretch;
-    background-size: cover;
+.ministry img{
+    width: 200px;
     height: 200px;
-    padding: 8px 8px;
-    border-radius: 4px;
 }
 
-.ministry .cover-1{
-    background-image: url(../element/image/student-ministry-cover.png);
-}
-
-.ministry .cover-2{
-    background-image: url(../element/image/singles-ministry-cover.png);
-}
-
-.ministry .cover-3{
-    background-image: url(../element/image/married-ministry-cover.png);
-}
-
-.ministry .cover-4{
-    background-image: url(../element/image/樂齡團契/cover.jpg);
-}
-
-.ministry .label{
+.ministry .box{
     display: flex;
-    padding: 10px 8px;
-    height: 16px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 56px;
-    background: var(--main, #F2C700);
-
-    /* Text-5 */
-    font-family: Sans-Serif;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px; /* 120% */
-    color: var(--black, #000);
-}
-
-.ministry .name{
-    align-self: stretch;
-    color: var(--Black, #1A1A1A);
-    font-family: 'Noto Sans TC';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 120% */
-}
-
-.ministry .description{
-    display: flex;
-    padding-bottom: 0px;
     flex-direction: column;
-    align-self: stretch;
+    gap: 12px;
+    flex: 1 0 0;
+}
 
-    color: var(--black-40, rgba(0, 0, 0, 0.40));
-    font-family: 'Noto Sans TC';
+.ministry .box p{
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 17.6px */
+    font-weight: 350;
+    line-height: 140%; /* 22.4px */
 }
+
 
 @media(max-width:1366px){
     .ministry-section{
@@ -177,10 +133,6 @@
     .ministry{
         width: 48.5%;
     }
-    .ministry .cover-1, .ministry .cover-2, .ministry .cover-3, .ministry .cover-4{
-        height: 240px;
-        padding: 12px;
-    }
 }
 
 @media(max-width:768px){
@@ -189,26 +141,12 @@
         gap: 12px;
         margin: 0 auto 48px;
     }
-
     .ministry{
         width: 100%;
         gap:4px;
     }
-
     .ministry-section .section-title{
         font-size: 28px;
-    }
-
-    .ministry .cover-1, .ministry .cover-2, .ministry .cover-3, .ministry .cover-4{
-        height: 240px;
-    }
-
-    .ministry .name{
-        font-size: 18px;
-    }
-    
-    .ministry .description{
-        font-size: 14px;
     }
 }
 
@@ -218,26 +156,11 @@
         gap: 12px;
         margin: 0 auto 24px;
     }
-
     .ministry{
         width: 100%;
     }
-
     .ministry-section .section-title{
         font-size: 24px;
-    }
-
-    .ministry .cover-1, .ministry .cover-2, .ministry .cover-3, .ministry .cover-4{
-        height: 240px;
-        padding: 10px;
-    }
-
-    .ministry .name{
-        font-size: 16px;
-    }
-    
-    .ministry .description{
-        font-size: 12px;
     }
 }
 
@@ -249,20 +172,18 @@
     padding: 0px 80px;
     margin: 0 auto 80px;
     flex-direction: column;
-    align-items: center;
     gap: 24px;
 }
 
 .major-activity .section-title{
     color: var(--black, #000);
-    font-family: 'Noto Sans TC';
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.major-activity .events{
+.major-activity .event-list{
     display: flex;
     justify-content: center;
     align-self: stretch;
@@ -270,60 +191,37 @@
     gap:24px;
 }
 
-.major-activity .events .event-cover-1,
-.major-activity .events .event-cover-2,
-.major-activity .events .event-cover-3,
-.major-activity .events .event-cover-4{
+.major-activity .event{
     display: flex;
-    padding: 24px;
-    align-items: flex-end;
+    padding: 48px 36px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex: 1 0 0;
     border-radius: 8px;
+    background: var(--white, #FFF);
+}
 
-    color: var(--white, #FFF);
-    font-family: 'Noto Sans TC';
-    font-size: 20px;
+.major-activity .event .box{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.major-activity .event h3{
+    text-align: center;
+}
+
+.major-activity .event p{
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
+    text-align: center;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 350;
+    line-height: 140%; /* 22.4px */
 }
 
-.major-activity .events .event-cover-1:hover,
-.major-activity .events .event-cover-2:hover,
-.major-activity .events .event-cover-3:hover,
-.major-activity .events .event-cover-4:hover{
-    cursor: pointer;
-}
-
-.major-activity .events .event-cover-1{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.84%, rgba(0, 0, 0, 0.50) 100%), 
-    url(../element/image/sunday-service.png);
-    background-size: cover;
-    width: 100%;
-    height: 480px;
-}
-
-.major-activity .events .event-cover-2{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.84%, rgba(0, 0, 0, 0.50) 100%), 
-    url(../element/image/marriage-counselling.png);
-    background-size: cover;
-    width: 32%;
-    height: 268px;
-}
-
-.major-activity .events .event-cover-3{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.84%, rgba(0, 0, 0, 0.50) 100%), 
-    url(../element/image/bible-talks.png);
-    background-size: cover;
-    width: 32%;
-    height: 268px;
-}
-
-.major-activity .events .event-cover-4{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.84%, rgba(0, 0, 0, 0.50) 100%), 
-    url(../element/image/bible.avif);
-    background-size: cover;
-    width: 32%;
-    height: 268px;
-}
 
 @media(max-width:1366px){
     .major-activity{
@@ -335,24 +233,7 @@
     .major-activity .section-title{
         font-size: 36px;
     }
-    
-    .major-activity .events .event-cover-1,
-    .major-activity .events .event-cover-2,
-    .major-activity .events .event-cover-3,
-    .major-activity .events .event-cover-4{
-        font-size: 20px;
-        font-weight: 400;
-        padding: 20px;
-    }
 
-    .major-activity .events .event-cover-1{
-        width: 100%;
-    }
-    .major-activity .events .event-cover-2,
-    .major-activity .events .event-cover-3,
-    .major-activity .events .event-cover-4{
-        width: 31.5%;
-    }
 }
 
 @media(max-width:1024px){
@@ -361,24 +242,11 @@
         margin: 0 auto 64px;
         gap: 16px;
     }
-
     .major-activity .events{
         gap: 16px;
     }
-
     .major-activity .section-title{
         font-size: 32px;
-    }
-    
-    .major-activity .events .event-cover-1,
-    .major-activity .events .event-cover-2,
-    .major-activity .events .event-cover-3,
-    .major-activity .events .event-cover-4{
-        font-size: 20px;
-        font-weight: 400;
-        padding: 20px;
-        width: 48.5%;
-        height: 268px;
     }
 }
 
@@ -388,23 +256,11 @@
         margin: 0 auto 48px;
         gap: 16px;
     }
-
     .major-activity .events{
         gap: 16px;
     }
-
     .major-activity .section-title{
         font-size: 28px;
-    }
-    .major-activity .events .event-cover-1,
-    .major-activity .events .event-cover-2,
-    .major-activity .events .event-cover-3,
-    .major-activity .events .event-cover-4{
-        font-size: 16px;
-        font-weight: 300;
-        padding: 20px;
-        width:100%;
-        height: 268px;
     }
 }
 
@@ -633,8 +489,6 @@
     align-self: stretch;
 
     color: var(--Black, #1A1A1A);
-    text-align: center;
-    font-family: 'Noto Sans TC';
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
@@ -651,11 +505,11 @@
 }
 
 .other-event-section .slider.slider-1{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat url(../element/image/志工服務/picture-02.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 55%, rgba(0, 0, 0, 0.5) 100%), center center / cover no-repeat url(../element/image/志工服務/picture-02.jpg);
 }
 
 .other-event-section .slider.slider-2{
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.75) 100%), center center / cover no-repeat url(../element/image/志工服務/picture-05.jpg);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 55%, rgba(0, 0, 0, 0.5) 100%), center center / cover no-repeat url(../element/image/志工服務/picture-05.jpg);
 }
 
 .other-event-section .slider .body{
