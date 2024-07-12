@@ -166,7 +166,7 @@
     font-family: "Noto Sans TC";
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 110%; /* 46.2px */
 }
 
@@ -399,60 +399,41 @@
     line-height: normal;
 }
 
-.core-value-section .core-value-grid{
+.core-value-section .list{
     display: flex;
     flex-wrap: wrap;
-    gap: 1%;
+    gap: 20px;
 }
 
-.core-value-section .core-value-grid .core-value-1{
+.core-value-section .list .item{
     display: flex;
-    padding: 24px;
+    padding: 48px 36px;
     flex-direction: column;
-    gap: 24px;
-    width: 49.5%;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    border: 1.5px solid var(--black-40, rgba(0, 0, 0, 0.40));
-}
-
-.core-value-section .core-value-1 .heading{
-    display: flex;
     align-items: center;
-    gap: 12px;
-    align-self: stretch;
-}
-
-.core-value-section .core-value-1 .heading .icon{
-    width: 36px;
-    height: 36px;
-    background-image: url(../element/image/tcoc-logo-icon-only.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.core-value-section .core-value-1 .heading .core-value-name{
     flex: 1 0 0;
-    color: var(--main-dark-6, #181400);
-    font-family: "Noto Sans TC";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 30.8px */
+    border-radius: 8px;
+    background: var(--white, #FFF);
 }
 
-.core-value-section .core-value-1 .description{
-    align-self: stretch;
-    color: var(--black-80, rgba(0, 0, 0, 0.80));
+.core-value-section .list .item img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 28px;
+}
 
-    /* Body/M */
-    font-family: "Noto Sans TC";
-    font-size: 16px;
+.core-value-section .list .item h3{
+    margin-bottom: 12px;
+}
+
+.core-value-section .list .item p{
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
+    text-align: center;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 350;
     line-height: 140%; /* 22.4px */
 }
+
 
 
 @media(max-width:1366px){
@@ -474,26 +455,7 @@
         flex-wrap: wrap;
         gap: 1%;
     }
-    .core-value-section .core-value-grid .core-value-1{
-        padding: 16px;
-        gap: 16px;
-        border-radius: 8px;
-        margin-bottom: 16px;
-        border: 1.5px solid var(--black-40, rgba(0, 0, 0, 0.40));
-    }
-    .core-value-section .core-value-1 .heading{
-        gap: 12px;
-    }
-    .core-value-section .core-value-1 .heading .icon{
-        width: 48px;
-        height: 48px;
-    }
-    .core-value-section .core-value-1 .heading .core-value-name{
-        font-size: 24px;
-    }
-    .core-value-section .core-value-1 .description{
-        font-size: 16px;
-    }
+
 }
 @media(max-width:1024px){
     .core-value-section{
@@ -512,26 +474,7 @@
         flex-wrap: wrap;
         gap: 1%;
     }
-    .core-value-section .core-value-grid .core-value-1{
-        padding: 16px;
-        gap: 16px;
-        border-radius: 8px;
-        margin-bottom: 16px;
-        border: 1.5px solid var(--black-40, rgba(0, 0, 0, 0.40));
-    }
-    .core-value-section .core-value-1 .heading{
-        gap: 12px;
-    }
-    .core-value-section .core-value-1 .heading .icon{
-        width: 40px;
-        height: 40px;
-    }
-    .core-value-section .core-value-1 .heading .core-value-name{
-        font-size: 20px;
-    }
-    .core-value-section .core-value-1 .description{
-        font-size: 16px;
-    }
+
 }
 @media(max-width:768px){
     .core-value-section{
@@ -550,13 +493,7 @@
     .core-value-section .core-value-grid{
         gap: 12px;
     }
-    .core-value-section .core-value-grid .core-value-1{
-        padding: 20px 16px;
-        gap: 16px;
-        width: 100%;
-        border-radius: 8px;
-        margin-bottom: 0px;
-    }
+
 }
 @media(max-width:414px){
     .core-value-section{
@@ -570,25 +507,5 @@
     }
     .core-value-section .core-value-grid{
         gap: 12px;
-    }
-    .core-value-section .core-value-grid .core-value-1{
-        padding: 20px 16px;
-        gap: 16px;
-        width: 100%;
-        border-radius: 8px;
-        margin-bottom: 0px;
-    }
-    .core-value-section .core-value-1 .heading{
-        gap: 12px;
-    }
-    .core-value-section .core-value-1 .heading .icon{
-        width: 36px;
-        height: 36px;
-    }
-    .core-value-section .core-value-1 .heading .core-value-name{
-        font-size: 16px;
-    }
-    .core-value-section .core-value-1 .description{
-        font-size: 14px;
     }
 }
