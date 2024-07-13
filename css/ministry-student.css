@@ -3,12 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 64px;
+    gap: 120px;
 }
 
 @media(max-width:1366px){
     .wrapper{
-        gap: 48px;
+        gap: 80px;
     }
 }
 @media(max-width:1024px){

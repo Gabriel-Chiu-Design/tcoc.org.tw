@@ -1,457 +1,225 @@
-/* Marriage Counselling Section*/
+/* Hero Section*/
 
-.marriage-counselling-section{
+.hero-section{
     display: flex;
-    max-width: 1366px;
-    margin: 144px auto 80px;
+    width: 100%;
+    max-width: 640px;
     flex-direction: column;
-    gap: 24px;
-}
-
-.marriage-counselling-section .section-title-box{
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
+    margin: 120px auto 120px;
     align-items: center;
 }
 
-.marriage-counselling-section .section-title-box .title{
+.hero-section .title-box{
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin-bottom: 24px;
+}
+
+.hero-section .title-box .title{
     align-self: stretch;
     color: var(--black, #000);
     text-align: center;
-    font-family: "Noto Sans TC";
     font-size: 48px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
 
-.marriage-counselling-section .section-title-box .subtitle{
+.hero-section .title-box .subtitle{
     align-self: stretch;
     color: var(--black-40, rgba(0, 0, 0, 0.40));
     text-align: center;
-    font-family: "Noto Sans TC";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.marriage-counselling-section .section-title-box .logo{
-    width: 144px;
-    height: 144px;
-    margin: 24px;
+.hero-section img{
+    width: 240px;
+    height: 240px;
 }
 
-.marriage-counselling-section .section-title-box .description{
-    align-self: stretch;
-    padding: 0px 144px 0px;
+.hero-section p{
     color: var(--black-80, rgba(0, 0, 0, 0.80));
     text-align: center;
-    font-family: "Noto Sans TC";
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.marriage-counselling-section .concept-list{
-    display: flex;
-    padding: 48px 200px 0px;
-    flex-direction: column;
-    gap: 48px;
-}
-
-.marriage-counselling-section .concept-list .concept{
-    display: flex;
-    gap: 48px;
-    align-self: stretch;
-}
-
-.marriage-counselling-section .concept-list .concept .cover{
-    display: flex;
-    height: 240px;
-    flex:1 0 0;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    border-radius: 4px;
-    position: relative;
-}
-
-.marriage-counselling-section .concept-list .concept .cover .chip{
-    /*layout*/
-    display: flex;
-    padding: 2px 6px;
-    justify-content: center;
-    align-items: center;
-
-    /*position*/
-    position: absolute;
-    left: 8px;
-    top: 8px;
-
-    /*style*/
-    border-radius: 56px;
-    background: var(--main, #F2C700);
-    color: var(--black, #000);
-
-    /* Text-5 */
-    font-family: "Noto Sans TC";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 12px; /* 120% */
-    letter-spacing: 0.1px;
-}
-
-.marriage-counselling-section .concept-list .concept .text{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    flex:1 0 0;
-}
-
-.marriage-counselling-section .concept-list .concept .text .title{
-    align-self: stretch;
-    color: var(--Black, #1A1A1A);
-    font-family: "Noto Sans TC";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 120% */
-}
-
-.marriage-counselling-section .concept-list .concept .text .subtitle{
-    align-self: stretch;
-    color: var(--black-60, rgba(0, 0, 0, 0.60));
-    font-family: "Noto Sans TC";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 25.2px */
-}
-
-.marriage-counselling-section .concept-list .concept-1 .cover{
-    background-image: url(../element/image/counselling-concept-1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.marriage-counselling-section .concept-list .concept-2 .cover{
-    background-image: url(../element/image/counselling-concept-2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.marriage-counselling-section .concept-list .concept-3 .cover{
-    background-image: url(../element/image/counselling-concept-3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.marriage-counselling-section .concept-list .concept-4 .cover{
-    background-image: url(../element/image/counselling-concept-4.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.marriage-counselling-section .concept-list .concept-5 .cover{
-    background-image: url(../element/image/counselling-concept-5.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.marriage-counselling-section .more{
-    display: flex;
-    padding-top: 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    align-self: stretch;
-}
-
-.marriage-counselling-section .more .caption{
-    align-self: stretch;
-    color: var(--black-40, rgba(0, 0, 0, 0.40));
-    text-align: center;
-    font-family: "Noto Sans TC";
-    font-size: 16px;
     font-style: normal;
     font-weight: 350;
-    line-height: normal;
+    line-height: 140%; /* 28px */
+    margin-bottom: 48px;
 }
 
-.marriage-counselling-section .more .btn.outline{
+.hero-section .box{
     display: flex;
-    padding: 12px 12px 12px 24px;
+    gap: 24px;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 4px;
-    border: 1.5px solid var(--black, #000);
 }
 
-.marriage-counselling-section .more .btn.outline .btn-text{
-    color: var(--black, #000);
-    text-align: center;
-    font-family: "Noto Sans TC";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.marriage-counselling-section .more .btn.outline .btn-icon-r{
-    width: 24px;
-    height: 24px;
-    background-image: url(../element/image/arrow-right.png);
-    background-size: contain;
-}
-
-.marriage-counselling-section .more .btn.outline:hover{
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.90);
-
-    .btn-text{
-        color: white;
-    }
+.hero-section .btn:hover{
     .btn-icon-r{
-        background-image: url(../element/image/outline-arrow-right-hover.svg);
+        content: url(../element/image/arrow-right-hover.png);
+    }
+}
+
+.hero-section .btn.outline:hover{
+    .btn-icon-r{
+        content: url(../element/icons/arrow-right-outline-hover.svg);
     }
 }
 
 @media(max-width:1366px){
-    .marriage-counselling-section{
-        margin: 120px auto 80px;
-        gap: 24px;
+    .hero-section{
+        margin: 120px auto 48px;
         padding: 0 48px;
+        gap: 24px;
     }
-    .marriage-counselling-section .section-title-box .title{
+    .hero-section .title-box .title{
         font-size: 40px;
+        font-weight: 500;
     }
-    .marriage-counselling-section .section-title-box .subtitle{
+    .hero-section .title-box .subtitle{
         font-size: 20px;
+        font-weight: 400;
     }
-    .marriage-counselling-section .section-title-box .description{
-        padding: 24px 64px 0px;
-        font-size: 18px;
-    }
-    .marriage-counselling-section .concept-list{
-        padding: 48px 64px 0px;
-        gap: 48px;
-    }
-    .marriage-counselling-section .concept-list .concept{
-        gap: 48px;
-    }
-    .marriage-counselling-section .concept-list .concept .cover{
-        height: 240px;
-        flex:1 0 0;
-        gap: 10px;
-        border-radius: 4px;
-    }
-    .marriage-counselling-section .concept-list .concept .cover .chip{
-        /*layout*/
-        padding: 2px 6px;
-        /*position*/
-        position: absolute;
-        left: 8px;
-        top: 8px;
-        /*style*/
-        border-radius: 56px;
-        /* Text-5 */
-        font-size: 10px;
-    }
-    .marriage-counselling-section .concept-list .concept .text{
-        gap: 12px;
-    }
-    .marriage-counselling-section .concept-list .concept .text .title{
-        font-size: 20px;
-    }
-    .marriage-counselling-section .concept-list .concept .text .subtitle{
-        font-size: 18px;
-    }
-    .marriage-counselling-section .more{
-        padding-top: 24px;
-        gap: 12px;
-    }
-    .marriage-counselling-section .more .caption{
-        font-size: 16px;
-    }
+
 }
 
 @media(max-width:1024px){
-    .marriage-counselling-section{
+    .hero-section{
         margin: 120px auto 48px;
-        gap: 24px;
         padding: 0 24px;
+        gap: 36px;
     }
-    .marriage-counselling-section .section-title-box .title{
-        font-size: 36px;
+    .hero-section .title-box .title{
+        font-size: 32px;
+        font-weight: 500;
     }
-    .marriage-counselling-section .section-title-box .subtitle{
-        font-size: 20px;
-    }
-    .marriage-counselling-section .section-title-box .description{
-        padding: 24px 0px 0px;
+    .hero-section .title-box .subtitle{
         font-size: 18px;
+        font-weight: 400;
     }
-    .marriage-counselling-section .concept-list{
-        padding: 24px 0px 0px;
-        gap: 24px;
-    }
-    .marriage-counselling-section .concept-list .concept{
-        gap: 24px;
-    }
-    .marriage-counselling-section .concept-list .concept .cover{
-        height: 240px;
-        flex:1 0 0;
-        gap: 10px;
-        border-radius: 4px;
-    }
-    .marriage-counselling-section .concept-list .concept .cover .chip{
-        /*layout*/
-        padding: 2px 6px;
-        /*position*/
-        position: absolute;
-        left: 8px;
-        top: 8px;
-        /*style*/
-        border-radius: 56px;
-        /* Text-5 */
-        font-size: 10px;
-    }
-    .marriage-counselling-section .concept-list .concept .text{
-        gap: 12px;
-    }
-    .marriage-counselling-section .concept-list .concept .text .title{
-        font-size: 20px;
-    }
-    .marriage-counselling-section .concept-list .concept .text .subtitle{
-        font-size: 18px;
-    }
-    .marriage-counselling-section .more{
-        padding-top: 0px;
-        gap: 12px;
-    }
-    .marriage-counselling-section .more .caption{
-        font-size: 16px;
-    }
+
 }
 
 @media(max-width:768px){
-    .marriage-counselling-section{
-        margin: 96px auto 48px;
-        gap: 24px;
-        padding: 0 16px;
-    }
-    .marriage-counselling-section .section-title-box .title{
-        font-size: 32px;
-    }
-    .marriage-counselling-section .section-title-box .subtitle{
-        font-size: 18px;
-    }
-    .marriage-counselling-section .section-title-box .description{
-        display:none;
-    }
-    .marriage-counselling-section .concept-list{
-        padding: 0px 24px;
-        gap: 48px;
-    }
-    .marriage-counselling-section .concept-list .concept{
-        gap: 12px;
-        flex-direction: column;
-    }
-    .marriage-counselling-section .concept-list .concept .cover{
-        min-height: 320px;
-        width: 100%;
-        border-radius: 4px;
-    }
-    .marriage-counselling-section .concept-list .concept .cover .chip{
-        /*layout*/
-        padding: 2px 6px;
-        /*position*/
-        position: absolute;
-        left: 12px;
-        top: 12px;
-        /*style*/
-        border-radius: 56px;
-        /* Text-5 */
-        font-size: 10px;
-    }
-    .marriage-counselling-section .concept-list .concept .text{
-        gap: 12px;
-    }
-    .marriage-counselling-section .concept-list .concept .text .title{
-        font-size: 18px;
-    }
-    .marriage-counselling-section .concept-list .concept .text .subtitle{
-        font-size: 16px;
-    }
-    .marriage-counselling-section .more{
-        padding-top: 0px;
-        gap: 8px;
-    }
-    .marriage-counselling-section .more .caption{
-        font-size: 14px;
-    }
-}
-@media(max-width:414px){
-    .marriage-counselling-section{
-        margin: 88px auto 48px;
-        gap: 16px;
-    }
-    .marriage-counselling-section .section-title-box .title{
-        font-size: 24px;
-    }
-    .marriage-counselling-section .section-title-box .subtitle{
-        font-size: 16px;
-    }
-    .marriage-counselling-section .section-title-box .description{
-        display:none;
-    }
-    .marriage-counselling-section .concept-list{
+    .hero-section{
+        margin: 84px 16px 24px;
         padding: 0px;
         gap: 24px;
     }
-    .marriage-counselling-section .concept-list .concept{
-        gap: 8px;
-        flex-direction: column;
+    .hero-section .title-box .title{
+        font-size: 28px;
+        font-weight: 500;
     }
-    .marriage-counselling-section .concept-list .concept .cover{
-        min-height: 200px;
-        width: 100%;
-        border-radius: 4px;
+    .hero-section .title-box .subtitle{
+        font-size: 18px;
+        font-weight: 400;
     }
-    .marriage-counselling-section .concept-list .concept .cover .chip{
-        /*layout*/
-        padding: 2px 6px;
-        /*position*/
-        position: absolute;
-        left: 12px;
-        top: 12px;
-        /*style*/
-        border-radius: 56px;
-        /* Text-5 */
-        font-size: 10px;
+
+}
+
+@media(max-width:480px){
+    .hero-section{
+        margin: 80px 16px 24px;
+        padding: 0px;
+        gap: 24px;
     }
-    .marriage-counselling-section .concept-list .concept .text{
-        gap: 4px;
+    .hero-section .title-box .title{
+        font-size: 24px;
+        font-weight: 500;
     }
-    .marriage-counselling-section .concept-list .concept .text .title{
+    .hero-section .title-box .subtitle{
         font-size: 16px;
+        font-weight: 400;
     }
-    .marriage-counselling-section .concept-list .concept .text .subtitle{
-        font-size: 14px;
-    }
-    .marriage-counselling-section .more{
-        padding-top: 8px;
-        gap: 8px;
-    }
-    .marriage-counselling-section .more .caption{
-        font-size: 14px;
-    }
+
+}
+
+/* -----Category Section----- */
+
+.prepareenrich{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding: 0 80px 0;
+    width: 100%;
+    max-width: 1366px;
+    margin-bottom: 120px;
+}
+
+.prepareenrich .item{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding-left: 76px;
+}
+
+.prepareenrich .box{
+    position: relative;
+    flex: 1 0 0;
+}
+
+.prepareenrich .box h2{
+    margin-bottom: 8px;
+}
+
+.prepareenrich .subtitle{
+    color: var(--black-40, rgba(0, 0, 0, 0.40));
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 54px;
+}
+
+.prepareenrich .description{
+    color: var(--black-80, rgba(0, 0, 0, 0.80));
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 140%; /* 25.2px */
+}
+
+.prepareenrich .titlebg{
+    position: absolute;
+    width: 320px;
+    height: 28px;
+    top: 44px;
+    left: -120px;
+    z-index: -1;
+}
+
+.prepareenrich h4{
+    margin-bottom: 8px;
+}
+.prepareenrich ul{
+    padding-left: 24px;
+    margin-bottom: 28px;
+    list-style: url(../element/icons/menu-right.svg);
+}
+.prepareenrich li{
+    line-height: 150% !important;
+    color: var(--black-60, rgba(0, 0, 0, 0.60));
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
+}
+
+.prepareenrich .item .cover{
+    width: 400px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.prepareenrich .img-list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.prepareenrich .img-list p{
+    margin-bottom: 24px;
 }
 
 /* Information Details Section */
@@ -463,20 +231,28 @@
     padding: 0 80px;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 54px;
 }
 
 .information-section .section-title-box{
     display: flex;
     flex-direction: column;
     align-self: stretch;
+    position: relative;
+}
+
+.information-section .titlebg{
+    position: absolute;
+    width: 320px;
+    height: 28px;
+    top: 44px;
+    left: -120px;
+    z-index: -1;
 }
 
 .information-section .section-title-box .title{
     align-self: stretch;
     color: var(--black, #000);
-    text-align: center;
-    font-family: "Noto Sans TC";
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -486,8 +262,6 @@
 .information-section .section-title-box .subtitle{
     align-self: stretch;
     color: var(--black-40, rgba(0, 0, 0, 0.40));
-    text-align: center;
-    font-family: "Noto Sans TC";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -495,7 +269,8 @@
 }
 
 .information-section .location-list{
-    align-self: stretch;
+    display: flex;
+    flex-direction: column;
     display: flex;
     gap: 18px;
 }
@@ -509,6 +284,7 @@
 
 .information-section .location-list .location .cover{
     display: flex;
+    width: 380px;
     height: 240px;
     justify-content: center;
     align-items: center;
@@ -550,8 +326,7 @@
 .information-section .location-list .location .text .title{
     align-self: stretch;
     color: rgba(0, 0, 0, 0.5);
-    font-family: "Noto Sans TC";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
@@ -572,8 +347,7 @@
 
 .information-section .information{
     display: flex;
-    padding: 24px 80px 0px 80px;
-    gap: 16px;
+    gap: 80px;
     align-self: stretch;
 }
 
