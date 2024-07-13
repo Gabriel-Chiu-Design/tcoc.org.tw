@@ -215,6 +215,10 @@ h4{
     .btn-text{
         color: var(--main, #F2C700);
     }
+
+    .btn-icon-r{
+        content: url(../element/image/arrow-right-hover.png);
+    }
 }
 
 .btn.outline:hover{
