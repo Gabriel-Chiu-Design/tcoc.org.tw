@@ -79,15 +79,54 @@
     margin-bottom: 2%;
     border-radius: 8px;
     background: var(--white, #FFF);
+    position: relative;
+    overflow: hidden;
+}
+
+.ministry .tag{
+    position: absolute;
+    right: 12px;
+    bottom: -40px;
+    padding: 12px 20px;
+    background-color: #F2C700;
+    font-size: 14px;
+    border-radius: 100px;
+    transition: all ease-out 500ms;
+    z-index: 2;
+}
+
+.hover-bg{
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    width: 24px;
+    height: 24px;
+    background: center center / cover url(/element/icons/ministry-bg.svg);
 }
 
 .ministry:hover{
     cursor: pointer;
 }
 
+.ministry:hover .tag{
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    transition: all ease-out 500ms;
+}
+
+.ministry:hover .hover-bg{
+    left: -1000px;
+    bottom: -1000px;
+    width: 2000px;
+    height: 2000px;
+    transition: all ease-out 700ms;
+}
+
 .ministry img{
     width: 200px;
     height: 200px;
+    z-index: 2;
 }
 
 .ministry .box{
@@ -95,6 +134,7 @@
     flex-direction: column;
     gap: 12px;
     flex: 1 0 0;
+    z-index: 2;
 }
 
 .ministry .box p{
@@ -104,7 +144,6 @@
     font-weight: 350;
     line-height: 140%; /* 22.4px */
 }
-
 
 @media(max-width:1366px){
     .ministry-section{
@@ -131,7 +170,11 @@
         font-size: 32px;
     }
     .ministry{
-        width: 48.5%;
+        width: 100%;
+    }
+    .ministry img{
+        width: 160px;
+        height: 160px;
     }
 }
 
@@ -143,10 +186,18 @@
     }
     .ministry{
         width: 100%;
-        gap:4px;
+        gap:24px;
+        padding: 24px 16px;
     }
     .ministry-section .section-title{
         font-size: 28px;
+    }
+    .ministry img{
+        width: 100px;
+        height: 100px;
+    }
+    .ministry p{
+        font-size: 16px;
     }
 }
 
@@ -188,7 +239,7 @@
     justify-content: center;
     align-self: stretch;
     flex-wrap: wrap;
-    gap:24px;
+    gap:1%;
 }
 
 .major-activity .event{
@@ -197,9 +248,18 @@
     flex-direction: column;
     align-items: center;
     gap: 28px;
-    flex: 1 0 0;
+    width: 24.25%;
+    margin-bottom: 1%;
     border-radius: 8px;
     background: var(--white, #FFF);
+    position: relative;
+    overflow: hidden;
+}
+
+.major-activity .event img{
+    width: 200px;
+    height: 200px;
+    z-index: 2;
 }
 
 .major-activity .event .box{
@@ -207,6 +267,7 @@
     flex-direction: column;
     gap: 12px;
     align-self: stretch;
+    z-index: 2;
 }
 
 .major-activity .event h4{
@@ -222,6 +283,33 @@
     line-height: 140%; /* 22.4px */
 }
 
+.major-activity .event:hover .hover-bg{
+    left: -600px;
+    bottom: -600px;
+    width: 1200px;
+    height: 1200px;
+    transition: all ease-out 500ms;
+}
+
+.major-activity .event .tag{
+    z-index: 2;
+    position: absolute;
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 100px;
+    bottom: -36px;
+    font-size: 12px;
+    background-color: #F2C700;
+    color: var(--black-60, rgba(0, 0, 0, 1));
+    font-weight: 500;
+    text-align: center;
+    transition: all ease-out 500ms;
+}
+
+.major-activity .event:hover .tag{
+    bottom: 16px;
+    transition: all ease-out 500ms;
+}
 
 @media(max-width:1366px){
     .major-activity{
@@ -229,11 +317,9 @@
         margin: 0 auto 80px;
         gap: 16px;
     }
-
     .major-activity .section-title{
         font-size: 36px;
     }
-
 }
 
 @media(max-width:1024px){
@@ -247,6 +333,16 @@
     }
     .major-activity .section-title{
         font-size: 32px;
+    }
+    .major-activity .event{
+        padding: 48px 36px;
+        gap: 28px;
+        width: 49.5%;
+        border-radius: 8px;
+    }
+    .major-activity .event img{
+        width: 160px;
+        height: 160px;
     }
 }
 
