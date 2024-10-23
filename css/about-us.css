@@ -32,11 +32,11 @@
 }
 }
 
-@media(max-width:414px){
+@media(max-width:540px){
     .hero-section{
         margin: 120px auto 24px;
-        height: 240px;
-        background-size: cover;
+        height: 320px;
+        background-size: 180%;
 }
 }
 
@@ -164,16 +164,7 @@
     .church-history-section .swiper .swiper-slide{
         width: 35% !important;
     }
-    .church-history-section .swiper .event{
-        gap: 16px;
-    }
-    .church-history-section .swiper .event .title{
-        gap: 16px;
-    }
-    .church-history-section .swiper .event .title .year{
-        font-size: 42px;
-    }
-    .church-history-section .swiper .event .title .name{
+    .church-history-section .swiper .event .name{
         font-size: 20px;
     }
     .church-history-section .swiper .event .content .description{
@@ -198,27 +189,15 @@
     .church-history-section .swiper .swiper-slide{
         width: 40% !important;
     }
-    .church-history-section .swiper .event{
-        gap: 16px;
-    }
-    .church-history-section .swiper .event .event-cover-1,
-    .church-history-section .swiper .event .event-cover-2,
-    .church-history-section .swiper .event .event-cover-3,
-    .church-history-section .swiper .event .event-cover-4{
+    .church-history-section .swiper .event img{
         height: 200px;
         border-radius: 8px;
     }
-    .church-history-section .swiper .event .title{
-        gap: 16px;
-    }
-    .church-history-section .swiper .event .title .year{
-        font-size: 36px;
-    }
-    .church-history-section .swiper .event .title .name{
-        font-size: 20px;
+    .church-history-section .swiper .event .name{
+        font-size: 16px;
     }
     .church-history-section .swiper .event .content .description{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 @media(max-width:768px){
@@ -237,35 +216,17 @@
         padding-bottom: 36px;
     }
     .church-history-section .swiper .swiper-slide{
-        width: 55% !important;
-    }
-    .church-history-section .swiper .event{
-        gap: 16px;
+        width: 40% !important;
     }
     .church-history-section .swiper .event .content{
         gap: 8px;
     }
-    .church-history-section .swiper .event .event-cover-1,
-    .church-history-section .swiper .event .event-cover-2,
-    .church-history-section .swiper .event .event-cover-3,
-    .church-history-section .swiper .event .event-cover-4{
-        height: 160px;
+    .church-history-section .swiper .event img{
+        height: 200px;
         border-radius: 8px;
     }
-    .church-history-section .swiper .event .title{
-        gap: 12px;
-    }
-    .church-history-section .swiper .event .title .year{
-        font-size: 28px;
-    }
-    .church-history-section .swiper .event .title .name{
-        font-size: 20px;
-    }
-    .church-history-section .swiper .event .content .description{
-        font-size: 14px;
-    }
 }
-@media(max-width:414px){
+@media(max-width:540px){
     .church-history-section{
         margin:0px auto 24px;
         padding: 0px 16px;
@@ -281,31 +242,21 @@
         padding-bottom: 24px;
     }
     .church-history-section .swiper .swiper-slide{
-        width: 65% !important;
+        width: 35% !important;
     }
     .church-history-section .swiper .event{
-        gap: 12px;
+        gap: 0px;
     }
     .church-history-section .swiper .event .content{
         gap: 8px;
+        padding: 16px;
     }
-    .church-history-section .swiper .event .event-cover-1,
-    .church-history-section .swiper .event .event-cover-2,
-    .church-history-section .swiper .event .event-cover-3,
-    .church-history-section .swiper .event .event-cover-4{
-        height: 120px;
+    .church-history-section .swiper .event img{
+        height: 144px;
         border-radius: 8px;
     }
-    .church-history-section .swiper .event .title{
-        gap: 4px;
-        flex-direction: column;
-        align-items: start;
-    }
-    .church-history-section .swiper .event .title .year{
-        font-size: 24px;
-    }
-    .church-history-section .swiper .event .title .name{
-        font-size: 16px;
+    .church-history-section .swiper .event .name{
+        font-size: 14px;
     }
     .church-history-section .swiper .event .content .description{
         font-size: 14px;
@@ -400,11 +351,6 @@
         font-size: 20px;
         font-weight: 400;
     }
-    .core-value-section .core-value-grid{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1%;
-    }
 
 }
 @media(max-width:1024px){
@@ -419,10 +365,13 @@
     .core-value-section .titlebox .subtitle{
         font-size: 18px;
     }
-    .core-value-section .core-value-grid{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1%;
+    .core-value-section .list .item img{
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+    .core-value-section .list .item p{
+        font-size: 16px;
     }
 
 }
@@ -440,12 +389,15 @@
         font-size: 18px;
         text-align: center;
     }
-    .core-value-section .core-value-grid{
-        gap: 12px;
+    .core-value-section .list{
+        flex-direction: column;
+    }
+    .core-value-section .list .item{
+        padding:24px;
     }
 
 }
-@media(max-width:414px){
+@media(max-width:540px){
     .core-value-section{
         margin:0px auto 24px;
     }
@@ -454,8 +406,5 @@
     }
     .core-value-section .titlebox .subtitle{
         font-size: 16px;
-    }
-    .core-value-section .core-value-grid{
-        gap: 12px;
     }
 }

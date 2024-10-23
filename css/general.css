@@ -120,19 +120,39 @@ h4{
 }
 
 @media(max-width:1024px){
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 20px;
+    }
     h4{
         font-size: 18px;
     }
 }
 
 @media(max-width:768px){
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
+    }
     h4{
         font-size: 16px;
     }
 }
 
 @media(max-width:540px){
-
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 16px;
+    }
 }
 
 /* ----------Header CSS----------*/
@@ -561,7 +581,7 @@ h4{
     backdrop-filter: blur(4px);
 }
 
-@media(max-width:414px){
+@media(max-width:540px){
     .side-menu.active{
         width: 80%;
         background-image: url(../element/image/side-menu-414-bg.png);
@@ -721,6 +741,7 @@ h4{
 @media(max-width:1024px){
     .location-section{
         margin: 0 0 48px;
+        gap: 24px;
     }
     .location-container{
         padding: 24px 24px;
@@ -801,7 +822,7 @@ h4{
     }
 }
 
-@media(max-width:414px){
+@media(max-width:540px){
     .location-section{
         margin: 0 0 16px;
     }

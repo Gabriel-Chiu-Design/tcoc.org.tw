@@ -32,7 +32,7 @@
 }
 }
 
-@media(max-width:414px){
+@media(max-width:540px){
     .hero-section{
         margin: 120px auto 24px;
         height: 240px;
@@ -201,14 +201,20 @@
     }
 }
 
-@media(max-width:414px){
+@media(max-width:540px){
     .ministry-section{
         padding: 0 16px;
         gap: 12px;
         margin: 0 auto 24px;
     }
+    .ministry img{
+        width: 160px;
+        height: 160px;
+    }
     .ministry{
         width: 100%;
+        flex-direction: column;
+        text-align: center;
     }
     .ministry-section .section-title{
         font-size: 24px;
@@ -328,9 +334,6 @@
         margin: 0 auto 64px;
         gap: 16px;
     }
-    .major-activity .events{
-        gap: 16px;
-    }
     .major-activity .section-title{
         font-size: 32px;
     }
@@ -352,13 +355,32 @@
         margin: 0 auto 48px;
         gap: 16px;
     }
-    .major-activity .events{
-        gap: 16px;
+    .major-activity .event{
+        padding: 24px;
+        gap: 20px;
+        width: 49.5%;
+        border-radius: 8px;
     }
     .major-activity .section-title{
         font-size: 28px;
     }
 }
+
+@media(max-width:768px){
+    .major-activity .event-list{
+        gap: 16px;
+    }
+    .major-activity .event{
+        padding: 24px;
+        gap: 20px;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .major-activity .section-title{
+        font-size: 28px;
+    }
+}
+
 
 /* Engage-Section  css*/
 
@@ -532,7 +554,7 @@
     }
 }
 
-@media(max-width:414px){
+@media(max-width:540px){
     .engage-section{
         padding: 0 16px;
         gap: 12px;
@@ -567,6 +589,7 @@
 .other-event-section{
     display: flex;
     max-width: 1366px;
+    width: 100%;
     padding: 0px 80px;
     margin: 0 auto 80px;
     flex-direction: column;
@@ -816,7 +839,7 @@
     }
 }
 
-@media(max-width:414px){
+@media(max-width:540px){
     .other-event-section{
         padding: 0px 16px;
         margin: 0 auto 24px;
