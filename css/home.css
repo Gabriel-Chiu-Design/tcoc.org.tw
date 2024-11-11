@@ -101,7 +101,7 @@
     bottom: -24px;
     width: 24px;
     height: 24px;
-    background: center center / cover url(/element/icons/ministry-bg.svg);
+    background: center center / cover url(../element/icons/ministry-bg.svg);
 }
 
 .ministry:hover{
