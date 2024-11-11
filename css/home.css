@@ -115,12 +115,14 @@
     transition: all ease-out 500ms;
 }
 
-.ministry:hover .hover-bg{
-    left: -1000px;
-    bottom: -1000px;
-    width: 2000px;
-    height: 2000px;
-    transition: all ease-out 700ms;
+.ministry:hover {
+    .hover-bg{
+        left: -1000px;
+        bottom: -1000px;
+        width: 2000px;
+        height: 2000px;
+        transition: all ease-out 700ms;
+    }
 }
 
 .ministry img{
@@ -289,12 +291,14 @@
     line-height: 140%; /* 22.4px */
 }
 
-.major-activity .event:hover .hover-bg{
-    left: -600px;
-    bottom: -600px;
-    width: 1200px;
-    height: 1200px;
-    transition: all ease-out 500ms;
+.major-activity .event:hover{
+    .hover-bg{
+        left: -600px;
+        bottom: -600px;
+        width: 1200px;
+        height: 1200px;
+        transition: all ease-out 500ms;
+    }
 }
 
 .major-activity .event .tag{
