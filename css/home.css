@@ -631,6 +631,10 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 55%, rgba(0, 0, 0, 0.5) 100%), center center / cover no-repeat url(../element/image/志工服務/picture-05.jpg);
 }
 
+.other-event-section .slider.slider-3{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 55%, rgba(0, 0, 0, 0.5) 100%), center center / cover no-repeat url(../element/image/sdgs-cover.png);
+}
+
 .other-event-section .slider .body{
     display: flex;
     height: 640px;
