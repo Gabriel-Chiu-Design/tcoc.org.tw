@@ -90,37 +90,52 @@
 .media.sermon .video.no-1 .cover{
     background-image: url(../element/image/sermon-01.png);
 }
-
 .media.sermon .video.no-2 .cover{
     background-image: url(../element/image/sermon-02.png);
 }
-
 .media.sermon .video.no-3 .cover{
     background-image: url(../element/image/sermon-03.png);
+}
+.media.sermon .video.no-4 .cover{
+    background-image: url(../element/image/sermon-04.jpg);
+}
+.media.sermon .video.no-5 .cover{
+    background-image: url(../element/image/sermon-05.jpg);
+}
+.media.sermon .video.no-6 .cover{
+    background-image: url(../element/image/sermon-06.jpg);
 }
 
 .media.communion .video.no-1 .cover{
     background-image: url(../element/image/communion-01.png);
 }
-
 .media.communion .video.no-2 .cover{
     background-image: url(../element/image/communion-02.png);
 }
-
 .media.communion .video.no-3 .cover{
     background-image: url(../element/image/communion-03.png);
 }
+.media.communion .video.no-4 .cover{
+    background-image: url(../element/image/communion-04.jpg)
+}
+.media.communion .video.no-5 .cover{
+    background-image: url(../element/image/communion-05.jpg)
+}
+.media.communion .video.no-6 .cover{
+    background-image: url(../element/image/communion-06.webp)
+}
+
 
 .media.worship .video.no-1 .cover{
     background-image: url(../element/image/worship-01.png);
 }
 
 .media.worship .video.no-2 .cover{
-    background-image: url(../element/image/worship-02.png);
+    background-image: url(../element/image/always.png);
 }
 
 .media.worship .video.no-3 .cover{
-    background-image: url(../element/image/worship-03.png);
+    background-image: url(../element/image/lunar.jpg);
 }
 
 .media .video .cover .play{
