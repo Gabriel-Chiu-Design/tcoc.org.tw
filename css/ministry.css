@@ -12,6 +12,7 @@
     box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    z-index: 99;
 }
 
 .tab{
@@ -91,27 +92,30 @@
 
 @media(max-width:1366px){
     .ministry-tab{
-        width: 95%;
         margin: 96px 48px 0px;
-        padding: 12px 0px 0px;
-    
         box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
-
     }
 }
 @media(max-width:1024px){
     .ministry-tab{
-        padding: 12px 24px 0px;
+        padding: 0px;
+        background-color: #FFF;
     }
+    .tab{
+        flex: 1 1 0;
+    }
+
 }
 @media(max-width:768px){
     .ministry-tab{
-        padding: 8px 16px 0px;
+        margin: 80px 48px 0px;
+        width: 100%;
+        max-width: calc(100% - 16px)
     }
     .tab{
-        gap: 4px;
-        padding-bottom: 8px;
+        gap: 8px;
+        padding: 16px;
     }
     .tab.inactive .name,
     .tab.active .name{
