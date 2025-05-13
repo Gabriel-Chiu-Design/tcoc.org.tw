@@ -55,12 +55,14 @@
 .event-details-section .section-title-box{
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    align-self: stretch;
+    gap: 16px;
+    width: 100%;
 }
 
 .event-details-section .section-title-box .title{
-    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 16px;
     color: var(--black, #000);
     font-family: "Noto Sans TC";
     font-size: 40px;
@@ -69,33 +71,27 @@
     line-height: normal;
 }
 
+.event-details-section .section-title-box .tag-list{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.event-details-section .section-title-box .tag-list .tag{
+    padding: 4px 8px;
+    background-color: #fceaa9;
+    border-radius: 4px;
+    color: #5e4d00;
+    height: fit-content;
+}
+
 .event-details-section .section-title-box .details{
     display: flex;
     gap: 24px;
     align-self: stretch;
-}
 
-.event-details-section .section-title-box .details .caption{
     flex: 1 0 0;
     color: var(--black-40, rgba(0, 0, 0, 0.80));
-    font-family: "Noto Sans TC";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 350;
-    line-height: normal;
-}
-
-.event-details-section .section-title-box .details .location{
-    color: var(--black-40, rgba(0, 0, 0, 0.40));
-    font-family: "Noto Sans TC";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 350;
-    line-height: normal;
-}
-
-.event-details-section .section-title-box .details .date{
-    color: var(--black-40, rgba(0, 0, 0, 0.40));
     font-family: "Noto Sans TC";
     font-size: 20px;
     font-style: normal;
@@ -201,21 +197,19 @@
         margin: 144px auto 64px;
     }
     .event-details-section .section-title-box{
-        gap: 4px;
+        gap: 12px;
     } 
     .event-details-section .section-title-box .title{
         font-size: 36px;
-    }   
+    }
+    .event-details-section .section-title-box .tag{
+        font-size: 14px;
+    }
     .event-details-section .section-title-box .details{
         gap: 24px;
-    }
-    .event-details-section .section-title-box .details .caption,
-    .event-details-section .section-title-box .details .location,
-    .event-details-section .section-title-box .details .date{
         font-size: 18px;
     }
-    .event-details-section .swiper .cover{
-        border-radius: 4px;
+    .event-details-section .swiper{
         height: 640px;
     }
     .swiper-button-prev, .swiper-button-next{
@@ -248,7 +242,7 @@
         gap: 16px;
     }
     .event-details-section .section-title-box{
-        gap: 4px;
+        gap: 8px;
     } 
     .event-details-section .section-title-box .title{
         font-size: 32px;
@@ -261,8 +255,8 @@
     .event-details-section .section-title-box .details .date{
         font-size: 18px;
     }
-    .event-details-section .swiper .cover{
-        border-radius: 4px;
+    .event-details-section .swiper{
+        border-radius: 12px;
         height: 480px;
     }
     .swiper-button-prev, .swiper-button-next{
@@ -283,26 +277,18 @@
         margin: 120px auto 48px;
         gap: 16px;
     }
-    .event-details-section .section-title-box{
-        gap: 4px;
-    } 
     .event-details-section .section-title-box .title{
         font-size: 28px;
     }   
     .event-details-section .section-title-box .details{
         gap: 16px;
-        justify-content: space-between;
-    }
-    .event-details-section .section-title-box .details .caption,
-    .event-details-section .section-title-box .details .location,
-    .event-details-section .section-title-box .details .date{
         font-size: 16px;
     }
     .event-details-section .section-title-box .details .caption{
         display: none;
     }
-    .event-details-section .swiper .cover{
-        border-radius: 4px;
+    .event-details-section .swiper{
+        border-radius: 8px;
         height: 360px;
     }
     .swiper-button-prev, .swiper-button-next{
@@ -321,19 +307,13 @@
         margin: 80px auto 24px;
         gap: 12px;
     }
-    .event-details-section .section-title-box{
-        gap: 0px;
-    } 
     .event-details-section .section-title-box .title{
         font-size: 24px;
     }
-    .event-details-section .section-title-box .details .caption,
-    .event-details-section .section-title-box .details .location,
-    .event-details-section .section-title-box .details .date{
+    .event-details-section .section-title-box .details{
         font-size: 16px;
-
     }
-    .event-details-section .swiper .cover{
+    .event-details-section .swiper{
         border-radius: 4px;
         height: 240px;
     }
