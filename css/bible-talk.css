@@ -309,6 +309,7 @@
         font-size: 15px;
         display: flex;
         align-items: center;
+        text-align: start;
     }
     .bible-talk-section .more{
         padding-top: 0px;
