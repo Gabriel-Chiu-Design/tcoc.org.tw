@@ -61,6 +61,7 @@
     border-radius: 8px;
     border: 3px solid var(--main, #F2C700);
     background: var(--white, #FFF);
+    flex: 1 0 0;
 }
 
 .bible-talk-section .concepts .concept .heading{
@@ -89,6 +90,7 @@
 
 .bible-talk-section .concepts .concept .description{
     align-self: stretch;
+    text-align: center;
     color: var(--black-80, rgba(0, 0, 0, 0.80));
     font-family: "Noto Sans TC";
     font-size: 16px;
