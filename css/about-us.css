@@ -45,19 +45,22 @@
 .church-history-section{
     display: flex;
     max-width: 1366px;
+    width: 100%;
     margin:0px auto 80px;
     padding: 0px 80px;
     flex-direction: column;
     gap: 24px;
  }
 
-.church-history-section .titlebox{
+.church-history-section .titlebox,
+.media.goodnews .titlebox{
     display: flex;
     flex-direction: column;
     align-self: stretch;
  }
 
-.church-history-section .titlebox .title{
+.church-history-section .titlebox .title,
+.media.goodnews .titlebox .title{
     align-self: stretch;
     color: var(--black, #000);
     font-family: "Noto Sans TC";
@@ -67,7 +70,8 @@
     line-height: normal;
  }
 
-.church-history-section .titlebox .subtitle{
+.church-history-section .titlebox .subtitle,
+.media.goodnews .titlebox .subtitle{
     align-self: stretch;
     color: var(--black-40, rgba(0, 0, 0, 0.40));
     font-family: "Noto Sans TC";
@@ -152,10 +156,12 @@
         padding: 0px 48px;
         gap: 24px;
      }
-     .church-history-section .titlebox .title{
+     .church-history-section .titlebox .title,
+     .media.goodnews .titlebox .title{
         font-size: 36px;
      }
-    .church-history-section .titlebox .subtitle{
+    .church-history-section .titlebox .subtitle,
+    .media.goodnews .titlebox .subtitle{
         font-size: 20px;
      }
      .church-history-section .swiper{
@@ -177,10 +183,12 @@
         padding: 0px 24px;
         gap: 24px;
      }
-     .church-history-section .titlebox .title{
+     .church-history-section .titlebox .title,
+     .media.goodnews .titlebox .title{
         font-size: 32px;
      }
-    .church-history-section .titlebox .subtitle{
+    .church-history-section .titlebox .subtitle,
+    .media.goodnews .titlebox .subtitle{
         font-size: 18px;
      }
      .church-history-section .swiper{
@@ -232,10 +240,12 @@
         padding: 0px 16px;
         gap: 12px;
      }
-     .church-history-section .titlebox .title{
+     .church-history-section .titlebox .title,
+     .media.goodnews .titlebox .title{
         font-size: 24px;
      }
-    .church-history-section .titlebox .subtitle{
+    .church-history-section .titlebox .subtitle,
+    .media.goodnews .titlebox .subtitle{
         font-size: 16px;
      }
      .church-history-section .swiper{

@@ -702,6 +702,26 @@ h4{
     line-height: 100%;
 }
 
+/* .location-section .btn.outline .btn-icon{
+    width: 24px;
+    height: 24px;
+    background-image: url(../element/icons/hand-coin.svg);
+    background-size: contain;
+}
+
+.location-section .btn.outline:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.90);
+
+    .btn-icon{
+        background-image: url(../element/icons/hand-coin-hover.svg);
+    }
+
+    .btn-text{
+        color: white;
+    }
+} */
+
 @media(max-width:1366px){
     .location-section{
         margin: 0 0 64px;
