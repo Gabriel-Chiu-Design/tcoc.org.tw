@@ -77,6 +77,7 @@ select{
 
 body{
     background-color: #F7F7F7;
+    position: relative;
 }
 
 .wrap{
@@ -702,25 +703,48 @@ h4{
     line-height: 100%;
 }
 
-/* .location-section .btn.outline .btn-icon{
-    width: 24px;
-    height: 24px;
-    background-image: url(../element/icons/hand-coin.svg);
-    background-size: contain;
+.lineOA{
+    display: flex;
+    align-items: center;
+    background-color: #06C655;
+    border-radius: 1000px;
+    width: 54px;
+    overflow: hidden;
+    /* position */
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 99;
+    transition: all ease-in-out 300ms;
 }
 
-.location-section .btn.outline:hover{
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.90);
+.lineOA img{
+    width: 54px;
+    height: 54px;
+    transition: all ease-in-out 300ms;
+}
 
-    .btn-icon{
-        background-image: url(../element/icons/hand-coin-hover.svg);
-    }
+.lineOA p{
+    display: none;
+    color: #FFF;
+    font-size: 16px;
+}
 
-    .btn-text{
-        color: white;
-    }
-} */
+.lineOA.active{
+    width: 144px;
+    padding: 0 16px 0 4px;
+    gap: 4px;
+    transition: all ease-in-out 300ms;
+}
+
+.lineOA.active img{
+    transform: rotate(-45deg);
+    transition: all ease-in-out 300ms;
+}
+
+.lineOA.active p{
+    display: inline;
+}
 
 @media(max-width:1366px){
     .location-section{

@@ -22,4 +22,13 @@ $(document).ready(function () {
         $(".side-menu").toggleClass("active");
         $(".overlay").toggleClass("active");
     });
+
+    $(".lineOA").hover(function () {
+            // over
+            $(this).addClass("active");
+        }, function () {
+            // out
+            $(this).removeClass("active");
+        }
+    );
 });
