@@ -8,14 +8,13 @@
     position: relative;
 }
 
-.hero-section .lottie-animation{
+#lottie-container {
     height: 100%;
-    width: 100%;
-    display: block;
+    width: auto;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 
 @media(max-width:1366px){
@@ -41,7 +40,7 @@
 
 @media(max-width:540px){
     .hero-section{
-        margin: 120px auto 24px;
+        margin: 96px auto 48px;
         height: 240px;
 }
 }

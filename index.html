@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TCOC-首頁</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    
 </head>
 <body>
     <div class="wrap">
@@ -46,13 +46,15 @@
             </div>
         </div>
         <div class="hero-section">
-        <dotlottie-player
-            src="https://lottie.host/7a03b8a6-4e62-49d4-8ccd-104995891387/jj2xfNW74N.lottie"
-            class="lottie-animation"
-            background="transparent"
-            speed="1"
-            autoplay
+            <dotlottie-player
+                src="https://lottie.host/7a03b8a6-4e62-49d4-8ccd-104995891387/jj2xfNW74N.lottie"
+                background="transparent"
+                speed="1"
+                autoplay
             ></dotlottie-player>
+        </div>
+        <div class="hero-section">
+            <div id="lottie-container"></div>
         </div>
         <div class="ministry-section">
             <div class="section-title">多元化團契</div>
@@ -329,6 +331,7 @@
     <!--Javascript Links-->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="js/home.js"></script>
     <script src="js/side-menu.js"></script>
 </body>

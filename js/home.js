@@ -18,4 +18,28 @@ $(document).ready(function () {
             },
         });
 
+        const player = document.querySelector('dotlottie-player');
+
+            player.addEventListener('ready', () => {
+            const shadow = player.shadowRoot;
+            const svg = shadow.querySelector('svg');
+
+            if (svg) {
+                svg.style.height = '100%';
+                svg.style.width = 'auto';
+                svg.style.minWidth = '100vw';
+                svg.style.transform = 'translateX(-50%)';
+                svg.style.position = 'absolute';
+                svg.style.left = '50%';
+            }
+            });
+
+
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-container'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: ''
+        });
 });
