@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TCOC-首頁</title>
+    <link rel="preload" href="https://raw.githubusercontent.com/Gabriel-Chiu-Design/tcoc.org.tw/refs/heads/main/element/hero-animation.json" as="fetch" type="application/json" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/home.css">
@@ -45,14 +46,14 @@
                 <a href="#" class="side-menu-logo"></a>
             </div>
         </div>
-        <div class="hero-section">
+        <!-- <div class="hero-section">
             <dotlottie-player
                 src="https://lottie.host/7a03b8a6-4e62-49d4-8ccd-104995891387/jj2xfNW74N.lottie"
                 background="transparent"
                 speed="1"
                 autoplay
             ></dotlottie-player>
-        </div>
+        </div> -->
         <div class="hero-section">
             <div id="lottie-container"></div>
         </div>
@@ -328,10 +329,12 @@
         <p>聯絡我們</p>
 
     </a>
+    
     <!--Javascript Links-->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <script src="js/home.js"></script>
     <script src="js/side-menu.js"></script>
 </body>
