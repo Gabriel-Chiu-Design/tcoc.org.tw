@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TCOC-關於</title>
+    <link rel="preload" href="https://raw.githubusercontent.com/Gabriel-Chiu-Design/tcoc.org.tw/refs/heads/main/element/Hero%20entry%20animation%20(1).json" as="fetch" type="application/json" crossorigin="anonymous">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="css/general.css">
@@ -47,6 +48,7 @@
             </div>
         </div>
         <div class="hero-section">
+            <div id="lottie-container"></div>
         </div>
         <div class="core-value-section">
             <div class="titlebox">
@@ -57,12 +59,12 @@
                 <div class="item">
                     <img src="element/image/faith.svg" alt="">
                     <h3>Faith 站得穩</h3>
-                    <p>透過門徒訓練建立穩固的信仰基礎。學習福音真理、在小組中互相扶持、把聖經應用在生活裡，讓每個人都能委身成長。</p>
+                    <p>透過門徒訓練建立穩固的信仰基礎。學習福音真理、在小組中互相扶持、應用聖經在生活裡，讓人人都能委身成長。</p>
                 </div>
                 <div class="item">
                     <img src="element/image/family.svg" alt="">
                     <h3>Family 抱得緊</h3>
-                    <p>我們要建造像家人一樣的教會。從教會的整體方向規劃、各地教會彼此連結，到每個小組的關係，都要活出愛與合一。</p>
+                    <p>建造像家人一樣的教會。從教會的整體方向規劃、各地教會彼此連結，到每個小組的關係，都要活出愛與合一。</p>
                 </div>
                 <div class="item">
                     <img src="element/image/hope.svg" alt="">
@@ -358,6 +360,8 @@
     <!--Javascript Links-->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <script src="js/about-us.js"></script>
     <script src="js/media.js"></script>
     <script src="js/side-menu.js"></script>
