@@ -1,2 +1,19 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# 1. Redirect /index or // → /
+# ─────────────────────────────────────────────────────────────────────────────
 RewriteEngine On
-Redirect /test-redirect https://google.com
+
+RewriteCond %{THE_REQUEST} /\sindex(?:\.html)?\s [NC]
+RewriteRule ^index(?:\.html)?$ / [R=301,L]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 2. Redirect any URL ending with .html to the clean URL
+# ─────────────────────────────────────────────────────────────────────────────
+RewriteCond %{THE_REQUEST} \.html [NC]
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 3. Internally map “clean” URLs to their .html files
+# ─────────────────────────────────────────────────────────────────────────────
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
