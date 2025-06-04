@@ -14,28 +14,6 @@
     align-self: stretch;
 }
 
-.conviction-section .section-title-box .title{
-    align-self: stretch;
-    color: var(--black, #000);
-    text-align: center;
-    font-family: "Noto Sans TC";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.conviction-section .section-title-box .subtitle{
-    align-self: stretch;
-    color: var(--black-40, rgba(0, 0, 0, 0.40));
-    text-align: center;
-    font-family: "Noto Sans TC";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
 .conviction-section .concept-list{
     display: flex;
     padding: 48px 48px 0px;
@@ -48,7 +26,7 @@
     gap: 48px;
     align-self: stretch;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
-    padding-bottom: 12px;
+    padding-bottom: 40px;
 }
 
 .conviction-section .concept-list .concept .cover{
@@ -99,7 +77,7 @@
     align-self: stretch;
     color: var(--Black, #1A1A1A);
     font-family: "Noto Sans TC";
-    font-size: 36px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -139,31 +117,27 @@
 }
 
 .conviction-section .concept-list .concept-1 .cover{
-    background-image: url(../element/image/counselling-concept-1.png);
-    background-size: cover;
+    background-image: url(../element/image/married-minsitry/md-1.png);
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .conviction-section .concept-list .concept-2 .cover{
-    background-image: url(../element/image/counselling-concept-2.png);
-    background-size: cover;
+    background-image: url(../element/image/married-minsitry/md-2.png);
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .conviction-section .concept-list .concept-3 .cover{
-    background-image: url(../element/image/counselling-concept-3.png);
+    background-image: url(../element/image/married-minsitry/md-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .conviction-section .concept-list .concept-4 .cover{
-    background-image: url(../element/image/counselling-concept-4.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.conviction-section .concept-list .concept-5 .cover{
-    background-image: url(../element/image/counselling-concept-5.png);
+    background-image: url(../element/image/married-minsitry/md-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
